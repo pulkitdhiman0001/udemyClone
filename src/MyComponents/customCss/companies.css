@@ -1,0 +1,53 @@
+.companies{
+    padding: 0 6rem;
+    background-color: #f7f9fa;
+}
+
+.companies-heading h2{
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #6a6f73;
+}
+
+.companies-heading{
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.companies ul{
+    display: grid;
+    grid-auto-flow: column;
+    list-style-type: none;
+    padding: 1.5rem 2.4rem;
+    justify-content: space-between;
+    
+}
+
+
+@media (max-width: 1040px) {
+    .companies ul {
+        grid-auto-flow: initial;
+    grid-template-columns: repeat(4,4fr);
+    grid-gap: 1.6rem;
+    }
+    .companies li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .companies{
+        padding: 0 !important;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+.companies h2{
+    font-size: 1.1rem;
+}
+}
+
+@media (max-width: 830px) {
+    .companies h2{
+        font-size: 0.9rem;
+    }
+    }

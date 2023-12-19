@@ -1,0 +1,136 @@
+.learners_reviews {
+    background-color: #f7f9fa;
+    padding: 2rem 1rem;
+}
+
+.learners-reviews-main{
+    position: relative;
+}
+
+.main-title{
+    font-size: 1.5rem;
+    font-weight: 700 !important;
+}
+
+/* .review-cards {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 1.6rem;
+    overflow: hidden;
+} */
+
+.review-card {
+    /* width: 24rem; */
+    padding: 1.4rem;
+    border: 1px solid #d1d7dc;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 2.2rem;
+    height: 2.2rem;
+    background: #2d2f31;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+    color: white;
+}
+
+.user-name {
+    margin-left: 0.8rem;
+    flex-direction: column;
+    display: flex;
+}
+
+.heading-sm {
+    font-weight: 700;
+    align-items: baseline;
+    font-size: 1rem;
+}
+
+.user-info{
+    margin-bottom: 0.8rem;
+}
+
+.courses-link{
+    border-top: 1px solid #d1d7dc;
+    margin-top: 2.4rem;
+    padding-top: 2.4rem;
+    
+}
+
+.courses-link a{
+    color: #5624d0;
+    padding: 0;
+    height: auto;
+    text-align: left;
+    vertical-align: baseline;
+    white-space: normal;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+   
+}
+
+.play-icon{
+    font-size: 2.2rem;
+}
+
+.link-title{
+    margin-left: 0.4rem;
+}
+
+.learners-reviews-btns{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+}
+
+.left-learners-reviews-arrow{
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.right-learners-reviews-arrow{
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.left-learners-reviews-arrow-icon, .right-learners-reviews-arrow-icon{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #2d2f31;
+    color: white;
+}
+
+@media (max-width:1300px) {
+    .learners-reviews-main{
+        width: 95% !important;
+    }
+}

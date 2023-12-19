@@ -1,0 +1,140 @@
+.ub-main-block{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+}
+
+.ub-img img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+
+.ub-logo-container {
+
+  width: 192px;
+
+}
+
+.content-section{
+
+    margin: 0 4.6rem 0 0;
+    max-width: 25rem;
+    
+}
+
+.content-section h3{
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-family: emoji;
+}
+
+.ub-logo-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content{
+    font-size: 1.2rem;
+       
+}
+
+.content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.bullet{
+    font-size: 10px;
+    margin-right: 1rem;
+}
+
+.li-content{
+    display: flex;
+    align-items: baseline;
+    padding: 0.4rem 0;
+}
+
+.ub-btns{
+    display: flex;
+    
+}
+
+.ub-btns a{
+    text-decoration: none;
+}
+
+.ub-btns .btn-get-ub{
+    margin-right: .8rem;
+    padding: .9rem .9rem;
+    background-color: #2d2f31;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid #2d2f31;
+}
+
+.ub-btns .btn-ub-learn-more{
+    margin-right: .8rem;
+    padding: .9rem .9rem;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid #2d2f31;
+
+}
+
+.btn-get-ub:hover{
+    background-color: #3e4143;
+}
+
+.btn-ub-learn-more:hover{
+    background-color: #1739531f;
+}
+
+@media(max-width: 992px){
+    .ub-main-block {
+        flex-direction: column;
+    }
+    .content-section{
+        display: contents;
+    }
+
+    .ub-logo-container{
+        margin-top: 1.5rem;
+    }
+    .content-section h3{
+        text-align: center;
+    }
+
+    .ub-btns{
+        width: 100%;
+    }
+
+    .ub-btns a{
+        width: 50%;
+        text-align: center;
+    }
+
+
+    .ub-img img{
+        width: 470px;
+        height: 470px;
+    }
+  }
+
+
+@media(max-width: 600px){
+    .ub-btns{
+        flex-direction: column;
+    }
+    .ub-btns a{
+        width: 100%;
+        margin-top: .5rem;
+    }
+}

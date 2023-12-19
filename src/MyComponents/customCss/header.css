@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.nav {
+    position: relative;
+    z-index: 1010;
+    padding: .6rem 1.4rem !important;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2d2f31;
+}
+
+
+.udemy-logo {
+    height: 34px;
+    width: 91px;
+}
+
+.searchbox {
+    display: flex;
+    border-radius: 25px;
+    border: 1px solid black;
+
+    height: 3rem;
+
+}
+
+.search-form {
+    padding: 0 2.4rem 0 0;
+    width: 100%;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 1.2rem;
+    width: 100%;
+
+}
+
+.search-icon {
+    border: none;
+    background: transparent;
+
+}
+
+
+@media (max-width: 1216px) {
+    .header-udemy-business {
+        display: none;
+    }
+}
+
+@media (max-width: 1065px) {
+    .header-udemy-tech {
+        display: none;
+    }
+}
+
+@media (max-width: 912px) {
+
+    .nav{
+        padding: .6rem 0rem !important;
+    }
+
+    .header-login-btn,
+    .header-signup-btn,
+    .header-language-btn,
+    .nav-link.header-language-btn,
+    .header-category-btn,
+    .searchbox {
+        display: none;
+    }
+
+    .header-search-mobile-btn,
+    .header-hamburger-btn {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .cart-mobile_search-right {
+        flex: 1;
+        justify-content: end;
+    }
+
+    .udemy-header-btn {
+        flex: 6;
+        justify-content: center;
+        margin-left: 4rem;
+    }
+
+    .udemy-logo {
+        height: 28px;
+        width: 75px;
+    }
+}
+
+
+.hamburger-icom {
+    align-items: center;
+    display: flex;
+}
+
+.cart-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.header-cart-btn {
+    display: flex;
+    align-items: center;
+}
+
+.header-cart-btn:hover {
+    color: #401b9c !important;
+
+}
+
+
+.header-login-btn {
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: smaller;
+
+    margin-right: 10px;
+}
+
+.header-login-btn:hover {
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    background-color: #1739531f;
+    font-size: smaller;
+
+}
+
+.header-signup-btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: 10px;
+}
+
+.header-signup-btn:hover {
+    background-color: #3e4143;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+
+
+}
+
+.header-language-btn {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.header-language-btn:hover {
+    background-color: #1739531f;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.header-language-icon {
+    font-size: 20px;
+}
+
+
+
+
+
+
+.categories-nav-link{
+    position: relative;
+}
+
+.categories-popper-content{
+    scale: 0;
+    position: absolute;
+    left: 0;
+    display: flex;
+    font-size: .9rem;
+}
+
+
+.categories-nav-popper{
+    position: relative;
+    /* top: 4.3rem; */
+    top:1rem;
+    /* top: 100%; */
+    background-color: white;
+    /* right: 27rem;
+    width: 21%; */
+    min-width: 19rem;
+    left: 0;
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid lightgray;
+    /* display: none; */
+    /* scale: 0; */
+    height: 85vh;
+    
+}
+
+
+.categories-sub-nav-popper{
+    position: relative;
+    /* top: 4.3rem; */
+    top:1rem;
+    /* top: 100%; */
+    background-color: white;
+    /* right: 27rem;
+    width: 21%; */
+    min-width: 19rem;
+    left: 0;
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid lightgray;
+    /* scale: 0; */
+    height: 85vh;
+}
+
+
+.categories-nav-popper ul, .categories-sub-nav-popper ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories-nav-popper li, .categories-sub-nav-popper li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-nav-popper li:hover, .categories-sub-nav-popper li:hover{
+    color: #5624d0;
+    cursor: pointer;
+
+}
+
+.categories-nav-link:hover  .categories-popper-content{
+    scale: 1;
+    /* display: block; */
+    transition: scale .1s ease;
+}
+
+.categories-nav-link:hover .categories-nav-popper-header, .categories-nav-link:hover a{
+    color: #5624d0;
+}
+
+
+
+
+
+
+
+
+
+.ub-nav-link{
+    position: relative;
+}
+
+.ub-popper-content{
+    scale: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+.ub-nav-popper{
+    position: relative;
+    /* top: 4.3rem; */
+    top:1rem;
+    /* top: 100%; */
+    background-color: white;
+    /* right: 27rem;
+    width: 21%; */
+    min-width: 19rem;
+    right: 0;
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid lightgray;
+    /* display: none; */
+    /* scale: 0; */
+    
+    
+}
+
+.ub-nav-popper-header{
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: -.02rem;
+    line-height: 1.2rem;
+}
+
+.ub-nav-popper-btn a{
+    padding: 0.9rem 0.9rem;
+    background-color: #2d2f31;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #2d2f31;
+    display: flex;
+    justify-content: center;
+}
+
+
+.ub-nav-link:hover  .ub-popper-content{
+    scale: 1;
+    /* display: block; */
+    transition: scale .1s ease;
+}
+
+.ub-nav-link:hover .header-udemy-business{
+    color: #5624d0;
+}
+
+
+
+
+
+
+
+
+.udemy-tech-nav-link{
+    position: relative;
+}
+
+.udemy-tech-popper-content{
+    scale: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+.udemy-tech-nav-popper{
+    position: relative;
+    /* top: 4.3rem; */
+    top:1rem;
+    /* top: 100%; */
+    background-color: white;
+    /* right: 27rem;
+    width: 21%; */
+    min-width: 19rem;
+    right: 0;
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid lightgray;
+    /* display: none; */
+    /* scale: 0; */
+    
+    
+}
+
+.udemy-tech-nav-popper-header{
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: -.02rem;
+    line-height: 1.2rem;
+}
+
+.udemy-tech-nav-popper-btn a{
+    padding: 0.9rem 0.9rem;
+    background-color: #2d2f31;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #2d2f31;
+    display: flex;
+    justify-content: center;
+}
+
+
+.udemy-tech-nav-link:hover  .udemy-tech-popper-content{
+    scale: 1;
+    /* display: block; */
+    transition: scale .1s ease;
+}
+
+.udemy-tech-nav-link:hover .header-udemy-tech{
+    color: #5624d0;
+}
+
+
+
+
+
+
+
+.cart-nav-link{
+    position: relative;
+    margin-right: 10px;
+}
+
+.cart-popper-content{
+    scale: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+.cart-nav-popper{
+    position: relative;
+    /* top: 4.3rem; */
+    top:1rem;
+    /* top: 100%; */
+    background-color: white;
+    /* right: 27rem;
+    width: 21%; */
+    min-width: 19rem;
+    right: 0;
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid lightgray;
+    /* display: none; */
+    /* scale: 0; */
+    
+    
+}
+
+.cart-nav-popper-header{
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: -.02rem;
+    line-height: 1.2rem;
+}
+
+.cart-nav-popper-btn a{
+    padding: 0.9rem 0.9rem;
+    background-color: #2d2f31;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #2d2f31;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cart-nav-link:hover  .cart-popper-content{
+    scale: 1;
+    /* display: block; */
+    transition: scale .1s ease;
+}
+
+.cart-nav-link:hover .cart-nav-popper-header{
+    color: #5624d0;
+}
+
+
+
+
+
+
+
+
+

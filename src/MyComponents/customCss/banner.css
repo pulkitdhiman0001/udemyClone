@@ -1,0 +1,129 @@
+.banner {
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.carousel-item img {
+    height: auto;
+}
+
+.plan-for-individuals{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-weight: 800;
+    font-size: .8rem;
+    text-decoration: none;
+    padding: .8rem;
+}
+
+.plan-for-individuals:hover{
+    background-color: #3e4143;
+    border: 1px solid black;
+    color: white;
+    font-weight: 800;
+    font-size: .8rem;
+    padding: .8rem;
+    text-decoration: none;
+}
+
+.plan-for-organizations{
+    color: black;
+    padding: .8rem;
+    font-weight: 800;
+    font-size: .8rem;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.plan-for-organizations:hover{
+    border: 1px solid black;
+    color: black;
+    font-weight: 800;
+    font-size: .8rem;
+    background-color: #1739531f;
+    text-decoration: none;
+    padding: .8rem;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 0%;
+}
+
+@media (max-width: 1390px) {
+    .banner {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner-heading {
+        top: 3rem !important;
+        left: 5rem !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .banner-heading {
+        top: 2rem !important;
+        left: 4rem !important;
+    }
+}
+
+
+@media (max-width: 830px) {
+    .banner-heading {
+        display: none !important;
+    }
+
+    .banner-mobile-heading {
+        display: block !important;
+        text-align: left;
+        padding: 0 5px;
+       
+    }
+    .banner-mobile-heading h1{
+        font-size: 1.7rem;
+        font-family: emoji;
+    }
+    .banner-search-mobile-div{
+        display: block !important;
+        padding: 0 5px;
+    }
+}
+
+.banner-heading {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    max-width: 26rem;
+    text-align: left;
+    top: 4rem;
+    left: 4rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-family: emoji;
+}
+
+.banenr-search-mobile-btn{
+    display: flex;
+    padding: 0.6rem;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid  #2d2f31;
+    color: #6a6f73;
+    background-color: white;
+}
+
+.arrow_back_btn, .arrow_forward_btn{
+    background-color: black;
+    border-radius: 100%;
+    padding: 8px;
+
+}

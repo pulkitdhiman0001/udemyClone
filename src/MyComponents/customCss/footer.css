@@ -1,0 +1,95 @@
+.footer{
+    display: flex;
+}
+
+.links{
+    padding: 2rem;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+}
+.links a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.links li{
+    padding: .4rem 0 0 0;
+}
+
+.links ul{
+    display: inline-grid;
+    padding: 0 3rem 0 2rem;
+    list-style-type: none;
+}
+
+.language{
+    background-color: black;
+    display: flex;
+    padding: .7rem 2rem .7rem .7rem;
+    justify-content: flex-end;
+    right: 3rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.ln{
+    margin-left: .5rem;
+}
+
+
+.udemy-copyright{
+    padding: 1rem 4rem 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.udemy-copyright-logo img{
+    height: 34px;
+}
+
+.udemy-copyright{
+    font-size: .7rem;
+}
+
+@media (max-width:840px) {
+
+    .udemy-copyright-logo{
+        margin-bottom: 1rem;
+    }
+    
+    .udemy-copyright{
+        padding: 0rem 2rem 2rem 2rem;
+        display: grid;
+    }
+
+    .links{
+        padding: 2rem 3rem 0 2rem;
+    }
+
+    .links ul{
+        display: inline;
+    }
+
+    .language{
+        left: 2rem;
+        right: auto;
+    }
+
+    .links{
+        margin-top: 2rem;
+    }
+}

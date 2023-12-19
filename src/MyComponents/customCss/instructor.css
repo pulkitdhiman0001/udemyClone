@@ -1,0 +1,83 @@
+.instructor-block-main {
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+    margin-bottom: 4rem;
+}
+
+.instructor-block {
+    display: flex;
+    align-items: center;
+    width: 58rem;
+}
+
+.instructor-img img {
+    height: 400px;
+    width: 400px;
+    margin: 0 31.6rem 0 0;
+}
+
+.instructor-head h2 {
+    font-weight: 700;
+    font-family: emoji;
+}
+
+.instructor-desc {
+    font-size: 1.2rem;
+}
+
+.start-teaching-btn a {
+    padding: 1.2rem;
+    color: white;
+    background-color: #2d2f31;
+    text-decoration: none;
+}
+
+.start-teaching-btn a:hover {
+    background-color: #3e4143;
+}
+
+
+@media (max-width:995px) {
+    .instructor-block {
+        display: inline;
+        text-align: center;
+
+    }
+
+    .instructor-block-main {
+        width: 70%;
+        padding: 0 1rem;
+    }
+
+    .instructor-img img {
+        margin: 0rem 3rem 0rem 0rem;
+        width: 450px;
+        height: 450px;
+    }
+
+    .instructor-head {
+        margin-top: 2rem !important;
+    }
+
+    .instructor-desc {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:655px) {
+
+    .instructor-block-main {
+        width: 100%;
+    }
+
+    .instructor-img img {
+        margin: 0;
+    }
+
+    .start-teaching-btn a {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+}

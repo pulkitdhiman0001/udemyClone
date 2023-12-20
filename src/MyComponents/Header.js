@@ -1,12 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import './customCss/header.css'
 
-import MobileHeader from './MobileHeader';
-
 import logo from './images/logo.svg'
 
-export default function Header({onButtonClick, showMobileSearchOnClick, showMobileLanguageSelectOnClick, MobileHeaderBtnShow}) {
+export default function Header({showMobileSearchOnClick, showMobileLanguageSelectOnClick, MobileHeaderBtnShow}) {
 
     
     
@@ -16,7 +14,7 @@ export default function Header({onButtonClick, showMobileSearchOnClick, showMobi
 
         <nav className="nav align-items-center shadow bg-body rounded">
             <button type="button" className="nav-link header-hamburger-btn" onClick={MobileHeaderBtnShow} data-bs-target="#offcanvasMobileHeader" data-bs-toggle="offcanvas" aria-current="page" style={{ display: 'none', color:'black' }}><i className="material-icons hamburger-icom">menu</i></button>
-            {/* <MobileHeader isScaled={isScaled} MobileHeaderBtnHide={MobileHeaderBtnHide}/> */}
+    
             <div className='d-flex udemy-header-btn'>
                 <a className="nav-link" aria-current="page" href="https://www.google.com"><img className='udemy-logo' src={logo} alt='Udemy'/></a>
             </div>

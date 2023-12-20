@@ -179,10 +179,50 @@ export default function Courses_section() {
                 </p>
             </div>
 
-            <div className='course-categories-btns mt-5 mb-3' style={{ overflowX: "hidden" }}>
-                <div>
-                    <i className='material-icons left-arrow' >arrow_back_ios</i>
+            <div class="course-categories-btns mt-5 mb-3" tabindex="-1">
+                <div className='uk-visible-toggle uk-dark' uk-slider={'finite:true, dragable:true'}>
+                    <ul class="uk-slider-items">
+                        <li>
+
+                            <button className='course-categories-btn'>Pyhon</button>
+                        </li>
+                        <li>
+                            <button className='course-categories-btn'>Excel</button>
+
+                        </li>
+                        <li>
+
+                            <button className='course-categories-btn'>Web Developement</button>
+                        </li>
+                        <li>
+
+                            <button className='course-categories-btn'>JavaScript</button>
+                        </li>
+                        <li>
+
+                            <button className='course-categories-btn'>Data Science</button>
+                        </li>
+                        <li>
+
+                            <button className='course-categories-btn'>Amazon AWS</button>
+                        </li>
+                        <li>
+
+                            <button className='course-categories-btn'>Drawing</button>
+                        </li>
+
+                    </ul>
+
+                    <a class="uk-position-center-left" href uk-slider-item="previous">chevron_left</a>
+                    <a class="uk-position-center-right" href uk-slider-item="next">chevron_right</a>
                 </div>
+
+
+            </div>
+
+            {/* <div className='course-categories-btns mt-5 mb-3' style={{ overflowX: "hidden" }}>
+
+
                 <div className='course-categories-btn-div'>
                     <button className='course-categories-btn'>Pyhon</button>
                 </div>
@@ -204,11 +244,11 @@ export default function Courses_section() {
                 <div className='course-categories-btn-div'>
                     <button className='course-categories-btn'>Drawing</button>
                 </div>
-                <div className='right-arrow'>
-                    <i className='material-icons' id='arrow_forward_ios' >arrow_forward_ios</i>
-                </div>
 
-            </div>
+
+
+
+            </div> */}
 
             <div className='courses-section-content' >
 
@@ -287,7 +327,7 @@ export default function Courses_section() {
 
 
                                         <section style={{ position: 'relative' }}>
-                                          
+
                                             <div class="course-cards uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider={' finite:true'} >
 
                                                 <ul class="uk-slider-items uk-grid uk-grid-small">

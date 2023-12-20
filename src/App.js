@@ -23,13 +23,8 @@ import BecomeAnInstructor from './MyComponents/BecomeAnInstructor';
 import Footer from './MyComponents/Footer';
 import MobileHeader from './MyComponents/MobileHeader';
 import LanguageSelect from './MyComponents/languageSelect';
-import { FlatTree } from 'framer-motion';
 
 function App() {
-
-
-
-
 
   // toggle search mobile
   const [isMobileSearchVisible, setMobileSearchVisible] = useState({
@@ -67,53 +62,32 @@ function App() {
 
 
 
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-      // Update the windowWidth state whenever the window is resized
-      const handleResize = () => {
-          setWindowWidth(window.innerWidth);
-      };
+    // Update the windowWidth state whenever the window is resized
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-      // Attach the event listener
-      window.addEventListener('resize', handleResize);
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
 
-      // Remove the event listener when the component unmounts
-      return () => {
-          window.removeEventListener('resize', handleResize);
-      };
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
-
 
   const [isScaled, setIsScaled] = useState(false);
 
   const MobileHeaderBtnShow = () => {
-    if(windowWidth < 913){
-      setIsScaled(true)
-    }
-    else{
-      setIsScaled(false)
-    }
+    setIsScaled(true)
   };
 
   const MobileHeaderBtnHide = () => {
-    if(windowWidth > 913){
-      setIsScaled(false)
-    }
-    else{
-      setIsScaled(true)
-    }
-
-
+    setIsScaled(false)
   };
-
-
-  // toggle search mobile ends
-
-
-
-
 
 
   return (
@@ -136,8 +110,8 @@ function App() {
       <BecomeAnInstructor />
 
 
-      <MobileHeader MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} showMobileLanguageSelectOnClick={showMobileLanguageSelectOnClick} />
-
+      {windowWidth <= 913 && (<MobileHeader MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} showMobileLanguageSelectOnClick={showMobileLanguageSelectOnClick} />
+      )}
       <LanguageSelect isLanguageSelectVisible={isLanguageSelectVisible} />
       <Footer />
     </>

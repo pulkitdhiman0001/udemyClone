@@ -179,11 +179,11 @@ export default function Courses_section() {
                 </p>
             </div>
 
-            <div class="course-categories-btns mt-5 mb-3" tabindex="-1">
-                <div className='uk-visible-toggle uk-dark' uk-slider={'finite:true, dragable:true'}>
-                    <ul class="uk-slider-items">
-                        <li>
+            <div class="course-categories-btns mt-5 mb-3" tabindex="-1" style={{ overflow: 'hidden' }}>
+                <div className='uk-visible-toggle uk-dark' uk-slider={'dragable:true;'} style={{ display: 'flex', justifyContent: 'space-between' }}>
 
+                    <ul class={windowWidth > 920 ? "uk-slider-items uk-width-1-5 uk-grid uk-grid-small" : "uk-slider-items uk-width-1-3 uk-grid uk-grid-small"}>
+                        <li>
                             <button className='course-categories-btn'>Pyhon</button>
                         </li>
                         <li>
@@ -191,7 +191,6 @@ export default function Courses_section() {
 
                         </li>
                         <li>
-
                             <button className='course-categories-btn'>Web Developement</button>
                         </li>
                         <li>
@@ -211,11 +210,15 @@ export default function Courses_section() {
                             <button className='course-categories-btn'>Drawing</button>
                         </li>
 
+
                     </ul>
 
-                    <a class="uk-position-center-left" href uk-slider-item="previous">chevron_left</a>
-                    <a class="uk-position-center-right" href uk-slider-item="next">chevron_right</a>
+                    <a class="" href uk-slider-item="next" style={{ zIndex: 1, filter: 'drop-shadow(-10px 0px 6px white)', backgroundColor: 'white', color: '#5624d0' }}>
+                        <i className='material-icons'>arrow_forward_ios</i>
+                    </a>
+
                 </div>
+
 
 
             </div>

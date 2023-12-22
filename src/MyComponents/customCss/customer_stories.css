@@ -1,50 +1,4 @@
-/* .customer-stories-block{
-    background-color: #f7f9fa;
-    padding: 4rem;
-    
-    
-}
 
-.customer-stories-carousel{
-    display: grid;
-    grid-gap: 1.6rem;
-    grid-auto-flow: column;
-    grid-auto-columns: 100%;
-    position: relative;
-} */
-
-/* .customer-stories-block{
-    width: 60% !important;
-} */
-
-/* .carousel-inner{
-    height: 29rem !important;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .customer-stories-main{
-    width: 100%;
-} */
-
-/* .customer-stories-carousel{
-    background-color: white;
-} */
 
 .customer-stories-quote{
     margin-bottom: 1.6rem;
@@ -52,8 +6,7 @@
 
 .customer-stories{
     display: flex;
-    /* max-width: 50rem; */
-    padding: 2rem 1rem 1rem 2rem;
+    padding: 2rem 3rem 1rem 2rem;
     border: 1px solid #d1d7dc;
     
 }
@@ -93,55 +46,10 @@
     line-height: 1.4;
 }
 
-/* .customer-stories-block{
-    max-width: 50rem;
-} */
-
-
-/* .left-customer-stories-arrow-icon{
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    padding: 1.2rem;
-} */
 
 .customer-details{
     width: max-content;
 }
-
-
-
-/* .customer-stories-btns{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 40%;
-    width: 100%;
-} */
-/* 
-.customer-stories-left-arrow{
-    cursor: pointer;
-    z-index: 2;
-} */
-
-/* .customer-stories-right-arrow{ */
-    /* width: 100%;
-    display: flex;
-    justify-content: flex-end; */
-    /* z-index: 2;
-    cursor: pointer;
-} */
-
-/* .customer-stories-left-arrow-icon:hover, .customer-stories-right-arrow-icon:hover{
-    background-color: #3e4143;
-} */
-
-/* .customer-stories-left-arrow-icon, .customer-stories-right-arrow-icon{
-    padding: 12px;
-    border-radius: 50%;
-    background-color: #2d2f31;
-    color: white;
-} */
 
 
 .more-customer-stories{
@@ -172,8 +80,8 @@
 @media (max-width:900px) {
 
     .customer-stories{
-        min-height: 28rem
-    }
+        min-height: 23rem;
+    }    
 
     .customer-profile{
         margin-left: 0;
@@ -211,8 +119,18 @@
 }
 
 
+@media (max-width:750px) {
+    .customer-stories{
+        min-height: 28rem;
+    }    
+}
 
 @media (max-width: 650px) {
+
+    
+    .customer-stories{
+        min-height: 28rem
+    }
 
     .customer-profile{
         position: absolute;

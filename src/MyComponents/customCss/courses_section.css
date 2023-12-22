@@ -224,6 +224,15 @@
     font-weight: 700;
 }
 
+.add-to-cart button:hover {
+    border: none;
+    background-color: #8125bf;
+    color: white;
+    padding: .8rem;
+    width: 15rem;
+    font-weight: 700;
+}
+
 .like-btn {
     border-radius: 50%;
     border: 1px solid;

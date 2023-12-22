@@ -17,13 +17,34 @@
     width: 60% !important;
 } */
 
-.customer-stories-main{
-    width: 100%;
-}
+/* .carousel-inner{
+    height: 29rem !important;
+} */
 
-.customer-stories-carousel{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .customer-stories-main{
+    width: 100%;
+} */
+
+/* .customer-stories-carousel{
     background-color: white;
-}
+} */
 
 .customer-stories-quote{
     margin-bottom: 1.6rem;
@@ -32,23 +53,24 @@
 .customer-stories{
     display: flex;
     /* max-width: 50rem; */
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 2rem 1rem 1rem 2rem;
     border: 1px solid #d1d7dc;
     
 }
 
 .customer-profile img{
     border-radius: 50%;
-    height: 150px;
+    height: 120px;
 }
 
 .customer-story{
-    margin-right: 5rem;
+    margin-right: 0rem;
     text-align: justify;
 }
 
 .customer-profile{
     text-align: center;
+    margin-left: 3rem;
 }
 
 .customer-name{
@@ -67,28 +89,14 @@
     
 }
 
-.customer-stories-block{
+.customer-review{
+    line-height: 1.4;
+}
+
+/* .customer-stories-block{
     max-width: 50rem;
-}
+} */
 
-.right-customer-stories-arrow, .left-customer-stories-arrow{
-    
-    /* background-color: transparent !important; */
-    top: 3rem;
-    opacity: 1 !important;
-}
-
-.right-customer-stories-arrow:hover, .left-customer-stories-arrow:hover{
-    background-color: transparent !important;
-}
-
-.right-customer-stories-arrow{
-    justify-content: end !important;
-}
-
-.left-customer-stories-arrow{
-    justify-content: start !important;
-}
 
 /* .left-customer-stories-arrow-icon{
     background-color: black;
@@ -103,45 +111,44 @@
 
 
 
-.customer-stories-btns{
+/* .customer-stories-btns{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 30%;
+    top: 40%;
     width: 100%;
-}
-
+} */
+/* 
 .customer-stories-left-arrow{
     cursor: pointer;
     z-index: 2;
-}
+} */
 
-.customer-stories-right-arrow{
+/* .customer-stories-right-arrow{ */
     /* width: 100%;
     display: flex;
     justify-content: flex-end; */
-    z-index: 2;
+    /* z-index: 2;
     cursor: pointer;
-}
+} */
 
-.customer-stories-left-arrow-icon:hover, .customer-stories-right-arrow-icon:hover{
+/* .customer-stories-left-arrow-icon:hover, .customer-stories-right-arrow-icon:hover{
     background-color: #3e4143;
-}
+} */
 
-.customer-stories-left-arrow-icon, .customer-stories-right-arrow-icon{
+/* .customer-stories-left-arrow-icon, .customer-stories-right-arrow-icon{
     padding: 12px;
     border-radius: 50%;
     background-color: #2d2f31;
     color: white;
-}
+} */
 
 
 .more-customer-stories{
-    position: relative;
-    bottom: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:2rem;
 }
 
 .more-customer-stories a{
@@ -151,33 +158,50 @@
     font-size: .9rem;
 }
 
-@media (max-width: 890px) {
-    .more-customer-stories{
-        position: relative;
-        top: -4rem;
-        bottom: 0;
-        justify-content: flex-start;
-    }
 
+
+
+.left-customer-stories-arrow-icon, .right-customer-stories-arrow-icon{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #2d2f31;
+    color: white;
 }
 
-@media (max-width: 700px) {
-    .more-customer-stories{
-        top: 0;
-    }
-}
 
 @media (max-width:900px) {
+
+    .customer-stories{
+        min-height: 28rem
+    }
+
+    .customer-profile{
+        margin-left: 0;
+    }
+
+    
+
+    .more-customer-stories{
+        justify-content: start;
+    }
+
     .customer-story{
         margin-right: 3rem;
     }
+
+    
+
 
     .customer-stories-main{
         width: 92% !important;
     }
 
     .customer-stories-section{
-        padding: 3rem 0rem 3rem 0rem !important;
+        padding: 5rem 0rem 5rem 0rem !important;
+    }
+    .read-more-desktop{
+        position: absolute;
+        bottom: 3rem;
     }
 
 }
@@ -186,10 +210,18 @@
     display: none;
 }
 
+
+
 @media (max-width: 650px) {
 
-    .customer-stories-btns{
-        top: 40%;
+    .customer-profile{
+        position: absolute;
+        bottom: 6rem;
+    }
+
+    .read-more-mobile{
+        position: absolute;
+        bottom: 2rem;
     }
 
     .customer-stories{
@@ -201,7 +233,7 @@
     }
 
     .customer-stories{
-        padding: 1rem;
+        padding: 3rem 2rem;
         height: auto;
     }
 
@@ -209,7 +241,7 @@
         text-align: left;
         display: flex;
         align-items: center;
-        margin-top: 4rem;
+
     }
 
     .customer-name{
@@ -230,7 +262,7 @@
     }
 
     .customer-img{
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 0;
     }
 
     .customer-story img{

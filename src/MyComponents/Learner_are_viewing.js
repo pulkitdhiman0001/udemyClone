@@ -170,7 +170,7 @@ export default function Learner_are_viewing() {
 
     return (
 
-        <div className='mx-auto learners-are-viewing' style={{ padding: '4rem 1rem 4rem 1rem' }}>
+        <div className='mx-auto learners-are-viewing' style={{ padding: '4rem 1rem 0rem 1rem' }}>
 
 
             <div className='learners-are-viewing-title'>

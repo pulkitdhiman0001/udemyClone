@@ -15,7 +15,7 @@ import music from "./images/music.jpg"
 
 export default function Top_categories() {
   return (
-    <section className='top_categories_section mx-auto mt-2 mb-5'>
+    <section className='top_categories_section mx-auto mt-2'>
       <h2 className='top_categories_title'>Top categories</h2>
 
     <div className='top_categories_mobile_view mx-auto'>

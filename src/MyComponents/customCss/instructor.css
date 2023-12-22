@@ -16,7 +16,7 @@
     margin: 0 31.6rem 0 0;
 }
 
-.instructor-head h2 {
+.instructor-head h1 {
     font-weight: 700;
     font-family: emoji;
 }
@@ -51,12 +51,16 @@
 
     .instructor-img img {
         margin: 0rem 3rem 0rem 0rem;
-        width: 450px;
-        height: 450px;
+        width: 300px;
+        height: 300px;
     }
 
     .instructor-head {
         margin-top: 2rem !important;
+    }
+
+    .instructor-head h1{
+        font-size: 2rem;
     }
 
     .instructor-desc {

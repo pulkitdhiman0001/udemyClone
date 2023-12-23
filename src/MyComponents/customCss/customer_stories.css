@@ -19,6 +19,7 @@
 .customer-story{
     margin-right: 0rem;
     text-align: justify;
+    display: flex;
 }
 
 .customer-profile{
@@ -44,6 +45,7 @@
 
 .customer-review{
     line-height: 1.4;
+    flex: 1;
 }
 
 
@@ -68,7 +70,6 @@
 
 
 
-
 .left-customer-stories-arrow-icon, .right-customer-stories-arrow-icon{
     padding: 12px;
     border-radius: 50%;
@@ -76,6 +77,10 @@
     color: white;
 }
 
+.read-more-desktop{
+    position: absolute;
+    bottom: 2rem;
+}
 
 @media (max-width:900px) {
 
@@ -97,20 +102,7 @@
         margin-right: 3rem;
     }
 
-    
 
-
-    .customer-stories-main{
-        width: 92% !important;
-    }
-
-    .customer-stories-section{
-        padding: 5rem 0rem 5rem 0rem !important;
-    }
-    .read-more-desktop{
-        position: absolute;
-        bottom: 3rem;
-    }
 
 }
 
@@ -142,10 +134,7 @@
         bottom: 2rem;
     }
 
-    .customer-stories{
-        display: inline-block;
-        
-    }
+    
     .customer-story{
         margin-right: 0rem;
     }
@@ -189,4 +178,10 @@
 
   
     
+}
+
+@media (max-width:500px) {
+    .customer-stories{
+        min-height: 35rem;
+    }
 }

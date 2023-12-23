@@ -96,7 +96,7 @@ export default function Courses_section() {
                         <AnimatePresence>
                             {isOpen && (
                                 <motion.div {...layerProps}>
-                                    <div className='card-container-popup'>
+                                    <div className='card-container-popup' style={{transition:'all 3s'}}>
                                         <div className='card-container-popup-content'>
                                             <div className='card-container-popup-header'>
                                                 <span>The Complete Python Bootcamp From Zero to Hero in Python</span>
@@ -223,35 +223,7 @@ export default function Courses_section() {
 
             </div>
 
-            {/* <div className='course-categories-btns mt-5 mb-3' style={{ overflowX: "hidden" }}>
-
-
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>Pyhon</button>
-                </div>
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>Excel</button>
-                </div>
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>Web Developement</button>
-                </div>
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>JavaScript</button>
-                </div>
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>Data Science</button>
-                </div>
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>Amazon AWS</button>
-                </div>
-                <div className='course-categories-btn-div'>
-                    <button className='course-categories-btn'>Drawing</button>
-                </div>
-
-
-
-
-            </div> */}
+       
 
             <div className='courses-section-content' >
 
@@ -280,9 +252,6 @@ export default function Courses_section() {
                                     <ListItem />
                                     <ListItem />
                                     <ListItem />
-
-
-
                                 </ul>
 
 

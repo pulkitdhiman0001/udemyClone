@@ -18,58 +18,68 @@ export default function CustomerStories() {
 
                     <ul class="uk-slider-items uk-grid">
                         <li class="uk-width-3-3">
-                            <div class="uk-panel">
-                                <div className=' customer-stories'>
-                                    <div className='customer-story'>
-                                        <img className="customer-stories-quote" src={quote} style={{ width: '17.78px', height: '16px' }} alt='"'></img>
-                                        <div className='customer-review'>
-                                            <span>
-                                                Thanks to Udemy Business, Booz Allen has armed our workforce, specifically its data scientists, with highly relevant and in-demand tech skills that are enabling consultants to stay ahead of big data trends and raise the bar on proficiency, skills, and competencies to meet client demand.
-                                            </span>
+
+                            <div className=' customer-stories'>
+                                <div className='customer-story'>
+
+                                    <div className='customer-review'>
+                                        <div>
+                                            <img className="customer-stories-quote" src={quote} style={{ width: '17.78px', height: '16px' }} alt='"'></img>
                                         </div>
+                                        <span>
+                                            Thanks to Udemy Business, Booz Allen has armed our workforce, specifically its data scientists, with highly relevant and in-demand tech skills that are enabling consultants to stay ahead of big data trends and raise the bar on proficiency, skills, and competencies to meet client demand.
+                                        </span>
+
                                         <div className='mt-5 read-more-desktop'>
                                             <a href="https://www.google.com" className='read-full-story'>Read full story</a>
                                         </div>
                                     </div>
 
-                                    <div className='customer-profile'>
-                                        <div className='customer-img'>
-                                            <img src={customer} alt='customer-img' />
-                                        </div>
-                                        <div className='customer-details'>
-                                            <div className='customer-name mt-4'>
-                                                Jim Hemgen
-                                            </div>
-                                            <div className='customer-designation'>
-                                                Principal
-                                            </div>
-                                            <div className='customer-location'>
+                                </div>
 
-                                            </div>
-                                            <div className='customer-company mt-2'>
-                                                Booz Allen Hamilton
-
-                                            </div>
-                                        </div>
+                                <div className='customer-profile'>
+                                    <div className='customer-img'>
+                                        <img src={customer} alt='customer-img' />
                                     </div>
-                                    <div className='mt-5 read-more-mobile'>
-                                        <a href="https://www.google.com" className='read-full-story'>Read full story</a>
+                                    <div className='customer-details'>
+                                        <div className='customer-name mt-4'>
+                                            Jim Hemgen
+                                        </div>
+                                        <div className='customer-designation'>
+                                            Principal
+                                        </div>
+                                        <div className='customer-location'>
+
+                                        </div>
+                                        <div className='customer-company mt-2'>
+                                            Booz Allen Hamilton
+
+                                        </div>
                                     </div>
                                 </div>
+                                <div className='mt-5 read-more-mobile'>
+                                    <a href="https://www.google.com" className='read-full-story'>Read full story</a>
+                                </div>
                             </div>
+
                         </li>
                         <li class="uk-width-3-3">
                             <div className=' customer-stories'>
                                 <div className='customer-story'>
-                                    <img className='customer-stories-quote' src={quote} style={{ width: '17.78px', height: '16px' }} alt='"'></img>
+
                                     <div className='customer-review'>
+                                        <div>
+                                            <img className="customer-stories-quote" src={quote} style={{ width: '17.78px', height: '16px' }} alt='"'></img>
+                                        </div>
                                         <span>
                                             With Udemy Business employees were able to marry the two together, technology and consultant soft skills. We're thankful that once they got in and took their key IT courses on AWS, Azure, Google Cloud, Big Data, and DevOps that they efficiently moved over to Consulting courses to help drive their career forward.
                                         </span>
+
+                                        <div className='mt-5 read-more-desktop'>
+                                            <a href="https://www.google.com" className='read-full-story'>Read full story</a>
+                                        </div>
                                     </div>
-                                    <div className='mt-5 read-more-desktop'>
-                                        <a href="https://www.google.com" className='read-full-story'>Read full story</a>
-                                    </div>
+
                                 </div>
 
                                 <div className='customer-profile'>
@@ -96,19 +106,24 @@ export default function CustomerStories() {
                                     <a href="https://www.google.com" className='read-full-story'>Read full story</a>
                                 </div>
                             </div>
+
                         </li>
                         <li class="uk-width-3-3">
                             <div className=' customer-stories'>
                                 <div className='customer-story'>
-                                    <img className='customer-stories-quote' src={quote} style={{ width: '17.78px', height: '16px' }} alt='"'></img>
+
                                     <div className='customer-review'>
+                                        <div>
+                                            <img className="customer-stories-quote" src={quote} style={{ width: '17.78px', height: '16px' }} alt='"'></img>
+                                        </div>
                                         <span>
                                             Udemy has been a great platform to stay competitive in the digital transformation of the workplace by offering fresh, relevant, personalized on-demand learning content powered by a dynamic content marketplace.
                                         </span>
+                                        <div className='mt-5 read-more-desktop'>
+                                            <a href="https://www.google.com" className='read-full-story'>Read full story</a>
+                                        </div>
                                     </div>
-                                    <div className='mt-5 read-more-desktop'>
-                                        <a href="https://www.google.com" className='read-full-story'>Read full story</a>
-                                    </div>
+
                                 </div>
 
                                 <div className='customer-profile'>
@@ -135,6 +150,7 @@ export default function CustomerStories() {
                                     <a href="https://www.google.com" className='read-full-story'>Read full story</a>
                                 </div>
                             </div>
+
                         </li>
 
                     </ul>

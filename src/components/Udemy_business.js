@@ -1,10 +1,10 @@
 import React from 'react'
 
-import ub from "./images/ub.jpg"
+import ub from "../images/ub.jpg"
 
-import ub_logo from "./images/ub.svg"
+import ub_logo from "../images/ub.svg"
 
-import "./customCss/udemy_business.css"
+import "../customCss/udemy_business.css"
 
 export default function Udemy_business() {
     return (

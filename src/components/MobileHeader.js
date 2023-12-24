@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./customCss/mobile_header.css"
+import "../customCss/mobile_header.css"
 
 export default function MobileHeader({ showMobileLanguageSelectOnClick, isScaled, MobileHeaderBtnHide }) {
 

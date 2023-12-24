@@ -1,34 +1,20 @@
 import React, { useState, useEffect } from 'react'
 
-import './customCss/banner.css';
+import '../customCss/banner.css';
 
 
-import banner_img from './images/banner-img.jpg';
+import banner_img from '../images/banner-img.jpg';
 
-import mobile_banner from './images/mobile-banner.jpg';
+import mobile_banner from '../images/mobile-banner.jpg';
 
-import mobile_banner2 from './images/mobile-banner2.jpg';
+import mobile_banner2 from '../images/mobile-banner2.jpg';
 
-import banner2 from './images/banner2.jpg';
+import banner2 from '../images/banner2.jpg';
+import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function Banner({ showMobileSearchOnClick }) {
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        // Update the windowWidth state whenever the window is resized
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        // Attach the event listener
-        window.addEventListener('resize', handleResize);
-
-        // Remove the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const windowWidth = useWindowWidth();
 
 
     return (

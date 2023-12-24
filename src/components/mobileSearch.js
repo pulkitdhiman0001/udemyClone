@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./customCss/mobileSearch.css"
+import "../customCss/mobileSearch.css"
 
 export default function mobileSearch({isMobileSearchVisible, hideMobileSearchOnClick}) {
 

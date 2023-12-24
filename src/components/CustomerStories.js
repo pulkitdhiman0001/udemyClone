@@ -1,11 +1,11 @@
 import React from 'react'
 
-import "./customCss/customer_stories.css"
+import "../customCss/customer_stories.css"
 
-import quote from "./images/quote.svg"
+import quote from "../images/quote.svg"
 
-import customer from "./images/customer.jpg"
-import hunter from "./images/hunter.jpg"
+import customer from "../images/customer.jpg"
+import hunter from "../images/hunter.jpg"
 
 export default function CustomerStories() {
 

@@ -1,5 +1,8 @@
 import React from 'react'
-import "./customCss/featured_topics.css"
+import "../customCss/featured_topics.css"
+
+
+
 export default function Featured_topics() {
     return (
         <div className='featured_topics mt-3'>

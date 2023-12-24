@@ -115,6 +115,10 @@
     .customer-stories{
         min-height: 28rem;
     }    
+
+    .customer-name, .customer-profile{
+        font-size: .9rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -180,7 +184,7 @@
     
 }
 
-@media (max-width:500px) {
+@media (max-width:499px) {
     .customer-stories{
         min-height: 35rem;
     }

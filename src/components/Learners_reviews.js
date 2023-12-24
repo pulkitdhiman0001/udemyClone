@@ -1,8 +1,8 @@
 import React from 'react'
 
-import quote from "./images/quote.svg"
+import quote from "../images/quote.svg"
 
-import "./customCss/learners_reviews.css"
+import "../customCss/learners_reviews.css"
 
 
 

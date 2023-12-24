@@ -1,8 +1,8 @@
 import React from 'react'
 
-import instructor from "./images/instructor.jpg"
+import instructor from "../images/instructor.jpg"
 
-import "./customCss/instructor.css"
+import "../customCss/instructor.css"
 
 export default function BecomeAnInstructor() {
     return (

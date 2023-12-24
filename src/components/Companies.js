@@ -1,15 +1,15 @@
 import React from 'react'
 
-import "./customCss/companies.css"
+import "../customCss/companies.css"
 
-import at from "./images/at.svg"
-import cisco from "./images/cisco.svg"
-import citi from "./images/citi.svg"
-import er from "./images/er.svg"
-import hp from "./images/hp.svg"
-import pg from "./images/pg.svg"
-import s from "./images/s.svg"
-import w from "./images/w.svg"
+import at from "../images/at.svg"
+import cisco from "../images/cisco.svg"
+import citi from "../images/citi.svg"
+import er from "../images/er.svg"
+import hp from "../images/hp.svg"
+import pg from "../images/pg.svg"
+import s from "../images/s.svg"
+import w from "../images/w.svg"
 
 
 export default function Companies() {

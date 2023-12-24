@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./customCss/languageSelect.css"
+import "../customCss/languageSelect.css"
 
 export default function languageSelect({isLanguageSelectVisible, hideMobileLanguageSelectOnClick}) {
     return (

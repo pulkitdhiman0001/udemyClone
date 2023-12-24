@@ -2,29 +2,35 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 
-import Header from "./MyComponents/Header";
+import Header from "./MyComponents/components/Header";
 
-import Banner from './MyComponents/Banner';
-import MobileSearch from './MyComponents/mobileSearch';
+import Banner from './MyComponents/components/Banner';
+import MobileSearch from './MyComponents/components/mobileSearch';
 
-import Companies from "./MyComponents/Companies"
+import Companies from "./MyComponents/components/Companies"
 
-import Coursessection from "./MyComponents/Courses_section"
+import Coursessection from "./MyComponents/components/Courses_section"
 
-import Learnersreviews from "./MyComponents/Learners_reviews"
+import Learnersreviews from "./MyComponents/components/Learners_reviews"
 
-import LearnerAreViewing from "./MyComponents/Learner_are_viewing"
+import LearnerAreViewing from "./MyComponents/components/Learner_are_viewing"
 
-import TopCategories from './MyComponents/Top_categories';
-import FeaturedTopics from './MyComponents/Featured_topics';
-import UdemyBusiness from './MyComponents/Udemy_business';
-import CustomerStories from './MyComponents/CustomerStories';
-import BecomeAnInstructor from './MyComponents/BecomeAnInstructor';
-import Footer from './MyComponents/Footer';
-import MobileHeader from './MyComponents/MobileHeader';
-import LanguageSelect from './MyComponents/languageSelect';
+import TopCategories from './MyComponents/components/Top_categories';
+import FeaturedTopics from './MyComponents/components/Featured_topics';
+import UdemyBusiness from './MyComponents/components/Udemy_business';
+import CustomerStories from './MyComponents/components/CustomerStories';
+import BecomeAnInstructor from './MyComponents/components/BecomeAnInstructor';
+import Footer from './MyComponents/components/Footer';
+import MobileHeader from './MyComponents/components/MobileHeader';
+import ChangePageLnnguage from './MyComponents/components/ChangePageLnnguage';
+
+import useWindowWidth from './MyComponents/hooks/useWindowWidth';
 
 function App() {
+
+
+  const windowWidth = useWindowWidth();
+
 
   // toggle search mobile
   const [isMobileSearchVisible, setMobileSearchVisible] = useState({
@@ -62,23 +68,7 @@ function App() {
 
 
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    // Update the windowWidth state whenever the window is resized
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    // Attach the event listener
-    window.addEventListener('resize', handleResize);
-
-    // Remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+  
   const [isScaled, setIsScaled] = useState(false);
 
   const MobileHeaderBtnShow = () => {
@@ -112,7 +102,7 @@ function App() {
 
       {windowWidth <= 913 && (<MobileHeader MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} showMobileLanguageSelectOnClick={showMobileLanguageSelectOnClick} />
       )}
-      <LanguageSelect isLanguageSelectVisible={isLanguageSelectVisible} />
+      <ChangePageLnnguage isLanguageSelectVisible={isLanguageSelectVisible} />
       <Footer />
     </>
   );

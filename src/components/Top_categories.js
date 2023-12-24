@@ -1,15 +1,15 @@
 import React from 'react'
 
-import "./customCss/top_categories.css"
+import "../customCss/top_categories.css"
 
-import design from "./images/design.jpg"
-import development from "./images/development.jpg"
-import marketing from "./images/marketing.jpg"
-import it from "./images/it.jpg"
-import personal_development from "./images/personal_development.jpg"
-import business from "./images/business.jpg"
-import photography from "./images/photography.jpg"
-import music from "./images/music.jpg"
+import design from "../images/design.jpg"
+import development from "../images/development.jpg"
+import marketing from "../images/marketing.jpg"
+import it from "../images/it.jpg"
+import personal_development from "../images/personal_development.jpg"
+import business from "../images/business.jpg"
+import photography from "../images/photography.jpg"
+import music from "../images/music.jpg"
 
 
 

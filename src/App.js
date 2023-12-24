@@ -1,30 +1,26 @@
 
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
-import Header from "./MyComponents/components/Header";
+// components
+import Header from "./components/Header";
+import Banner from './components/Banner';
+import MobileSearch from './components/mobileSearch';
+import Companies from "./components/Companies"
+import Coursessection from "./components/Courses_section"
+import Learnersreviews from "./components/Learners_reviews"
+import LearnerAreViewing from "./components/Learner_are_viewing"
+import TopCategories from './components/Top_categories';
+import FeaturedTopics from './components/Featured_topics';
+import UdemyBusiness from './components/Udemy_business';
+import CustomerStories from './components/CustomerStories';
+import BecomeAnInstructor from './components/BecomeAnInstructor';
+import Footer from './components/Footer';
+import MobileHeader from './components/MobileHeader';
+import ChangePageLnnguage from './components/ChangePageLnnguage';
 
-import Banner from './MyComponents/components/Banner';
-import MobileSearch from './MyComponents/components/mobileSearch';
-
-import Companies from "./MyComponents/components/Companies"
-
-import Coursessection from "./MyComponents/components/Courses_section"
-
-import Learnersreviews from "./MyComponents/components/Learners_reviews"
-
-import LearnerAreViewing from "./MyComponents/components/Learner_are_viewing"
-
-import TopCategories from './MyComponents/components/Top_categories';
-import FeaturedTopics from './MyComponents/components/Featured_topics';
-import UdemyBusiness from './MyComponents/components/Udemy_business';
-import CustomerStories from './MyComponents/components/CustomerStories';
-import BecomeAnInstructor from './MyComponents/components/BecomeAnInstructor';
-import Footer from './MyComponents/components/Footer';
-import MobileHeader from './MyComponents/components/MobileHeader';
-import ChangePageLnnguage from './MyComponents/components/ChangePageLnnguage';
-
-import useWindowWidth from './MyComponents/hooks/useWindowWidth';
+// hooks
+import useWindowWidth from './hooks/useWindowWidth';
 
 function App() {
 

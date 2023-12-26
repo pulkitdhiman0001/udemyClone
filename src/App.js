@@ -20,7 +20,7 @@ function App() {
       <Router baseline={'https://udemy-clone-fsiq.onrender.com//'}>
         <Routes>
           <Route exact path='/' element={<Index />} />
-          <Route exact path={'login'} element={<Login />} />
+          <Route exact path='login' element={<Login />} />
           <Route exact path='signup' element={<Signup />} />
         </Routes>
         

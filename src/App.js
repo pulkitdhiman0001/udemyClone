@@ -17,10 +17,10 @@ function App() {
         <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <Router basename='udemy-clone-fsiq.onrender.com'>
+      <Router >
         <Routes>
-          <Route exact path='/' element={<Index />} />
-          <Route exact path='/login/' element={<Login />} />
+          <Route baseline={'/localhost:3000'} exact path='/' element={<Index />} />
+          <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
         </Routes>
         

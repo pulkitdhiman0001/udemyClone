@@ -2,13 +2,13 @@ import React from 'react'
 
 import "../customCss/languageSelect.css"
 
-export default function languageSelect({isLanguageSelectVisible, hideMobileLanguageSelectOnClick}) {
+export default function languageSelect({toggleLanguage}) {
     return (
-        <div className='language-modal-main' style={isLanguageSelectVisible}>
+        <div className='language-modal-main'>
             <div className='language-modal-block'>
                 <div className='language-modal-header'>
                     <span>Choose a language</span>
-                    <i className='material-icons' onClick={hideMobileLanguageSelectOnClick}>close</i>
+                    <i className='material-icons' onClick={toggleLanguage}>close</i>
                 </div>
 
                 <div className='language-list mt-4'>

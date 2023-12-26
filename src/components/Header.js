@@ -4,7 +4,7 @@ import '../customCss/header.css'
 
 import logo from '../images/logo.svg'
 
-export default function Header({showMobileSearchOnClick, showMobileLanguageSelectOnClick, MobileHeaderBtnShow}) {
+export default function Header({toggleMobileSearch, toggleLanguage, MobileHeaderBtnShow}) {
 
     
     
@@ -276,7 +276,7 @@ export default function Header({showMobileSearchOnClick, showMobileLanguageSelec
 
 
             <div className='d-flex cart-mobile_search-right'>
-                <a className="nav-link header-search-mobile-btn" onClick={showMobileSearchOnClick} style={{ display: 'none' }} aria-current="page" href="#"><i className="material-icons header-search-mobile-icon">search</i></a>
+                <a className="nav-link header-search-mobile-btn" onClick={toggleMobileSearch} style={{display:'none'}} aria-current="page" href="#"><i className="material-icons header-search-mobile-icon">search</i></a>
                 <div className='cart-nav-link'>
 
                 </div>
@@ -305,9 +305,9 @@ export default function Header({showMobileSearchOnClick, showMobileLanguageSelec
 
 
             </div>
-            <a className="nav-link header-login-btn" aria-current="page" href="login">Log in</a>
-            <a className="nav-link header-signup-btn" aria-current="page" href="signup">Sign up</a>
-            <a className="nav-link header-language-btn" aria-current="page" onClick={showMobileLanguageSelectOnClick}><i className="material-icons header-language-icon">language</i></a>
+            <a className="nav-link header-login-btn" aria-current="page" href="/login">Log in</a>
+            <a className="nav-link header-signup-btn" aria-current="page" href="/signup">Sign up</a>
+            <a className="nav-link header-language-btn" aria-current="page" onClick={()=> toggleLanguage()}><i className="material-icons header-language-icon">language</i></a>
         </nav>
 
         

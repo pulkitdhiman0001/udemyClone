@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     backdrop-filter: brightness(0.3);
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
 }

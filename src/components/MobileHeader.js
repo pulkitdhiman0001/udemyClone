@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../customCss/mobile_header.css"
 
-export default function MobileHeader({ showMobileLanguageSelectOnClick, isScaled, MobileHeaderBtnHide }) {
+export default function MobileHeader({ toggleLanguage, isScaled, MobileHeaderBtnHide }) {
 
 
     return (
@@ -12,10 +12,10 @@ export default function MobileHeader({ showMobileLanguageSelectOnClick, isScaled
                     <div className='offcanvas-body'>
                         <div className='mobile-login-signup-btns'>
                             <div className='mobile-login-btn mb-3'>
-                                <a href="login">Log in</a>
+                                <a href="/login">Log in</a>
                             </div>
                             <div className='mobile-signup-btn'>
-                                <a href="signup">Sign up</a>
+                                <a href="/signup">Sign up</a>
                             </div>
                         </div>
                         <hr />
@@ -170,7 +170,7 @@ export default function MobileHeader({ showMobileLanguageSelectOnClick, isScaled
                                         <a href="https://www.google.com">Help</a>
                                     </li>
                                     <li>
-                                        <a className='mobile-header-language' onClick={showMobileLanguageSelectOnClick}>
+                                        <a className='mobile-header-language' onClick={toggleLanguage}>
                                             <div className='material-icons globe'>
                                                 language
                                             </div>

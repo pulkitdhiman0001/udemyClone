@@ -2,14 +2,14 @@ import React from 'react'
 
 import "../customCss/footer.css"
 
-export default function Footer() {
+export default function Footer({toggleLanguage}) {
     return (
         <>
             <div className='footer bg-dark'>
                 <div className='footer-links'>
 
 
-                    <a href="https://www.google.com" className='language'>
+                    <a onClick={toggleLanguage} className='language'>
                         <div className='material-icons globe'>
                             language
                         </div>

@@ -12,7 +12,7 @@ import mobile_banner2 from '../images/mobile-banner2.jpg';
 import banner2 from '../images/banner2.jpg';
 import useWindowWidth from '../hooks/useWindowWidth';
 
-export default function Banner({ showMobileSearchOnClick }) {
+export default function Banner({ toggleMobileSearch }) {
 
     const windowWidth = useWindowWidth();
 
@@ -29,15 +29,15 @@ export default function Banner({ showMobileSearchOnClick }) {
                             {windowWidth > 700 ? (<img src={banner_img} className="d-block w-100" alt="banner" />) : (<img src={mobile_banner} className="d-block w-100 image-fluid" alt="Mobile-Banner" />)}
                             <div className='banner-heading shadow bg-body rounded'>
                                 <h1>Last day to save!</h1>
-                                <p style={{marginTop:0}}>Enjoy the freedom to learn the way you want (for less). Log in for special savings on courses.</p>
+                                <p style={{ marginTop: 0 }}>Enjoy the freedom to learn the way you want (for less). Log in for special savings on courses.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
                             {windowWidth > 700 ? (<img src={banner2} className="d-block w-100" alt="banner" />) : (<img src={mobile_banner2} className="d-block w-100 image-fluid" alt="Mobule-Banner" />)}
                             <div className='banner-heading shadow bg-body rounded'>
                                 <h1>Skills that drive you forward</h1>
-                                <p style={{marginTop:0}}>Technology and the world of work change fast — with us, you’re faster. Get the skills to achieve goals and stay competitive.</p>
-                                <div className='banner-heading-buttons' style={{display:'flex',gap:'1rem'}}>
+                                <p style={{ marginTop: 0 }}>Technology and the world of work change fast — with us, you’re faster. Get the skills to achieve goals and stay competitive.</p>
+                                <div className='banner-heading-buttons' style={{ display: 'flex', gap: '1rem' }}>
                                     <a className='plan-for-individuals' href='https://www.google.com'>Plan for Individuals</a>
                                     <a className='plan-for-organizations' href='https://www.google.com'>Plan for Organizations</a>
                                 </div>
@@ -65,7 +65,7 @@ export default function Banner({ showMobileSearchOnClick }) {
                 </div>
 
                 <div className='banner-search-mobile-div mt-5 mb-5' style={{ display: 'none' }}>
-                    <button type='button' onClick={showMobileSearchOnClick} className='w-100 banenr-search-mobile-btn'>What do you want to learn?<i className="material-icons banenr-search-mobile-icon">search</i></button>
+                    <button type='button' onClick={toggleMobileSearch} className='w-100 banenr-search-mobile-btn'>What do you want to learn?<i className="material-icons banenr-search-mobile-icon">search</i></button>
                 </div>
 
             </div>

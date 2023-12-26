@@ -26,42 +26,17 @@ export default function Index() {
 
 
     // toggle search mobile
-    const [isMobileSearchVisible, setMobileSearchVisible] = useState({
-        display: 'none'
-    });
+    const [isMobileSearchVisible, setMobileSearchVisible] = useState(true);
+    const toggleMobileSearch = () => {
+        setMobileSearchVisible(!isMobileSearchVisible);
+    };
 
-    const [isLanguageSelectVisible, setLanguageSelectVisible] = useState({
-        display: 'none'
-    });
+    const [isLanguageSelectVisible, setLanguageSelectVisible] = useState(true);
+    const toggleLanguage = () => {
+        setLanguageSelectVisible(!isLanguageSelectVisible);
+    };
 
-
-    const showMobileSearchOnClick = () => {
-        setMobileSearchVisible({
-            display: 'block'
-        });
-        document.body.style.overflowY = 'hidden';
-    }
-
-    const hideMobileSearchOnClick = () => {
-        setMobileSearchVisible({
-            display: 'none'
-        });
-        document.body.style.overflowY = 'scroll';
-    }
-
-    const showMobileLanguageSelectOnClick = () => {
-        setLanguageSelectVisible({
-            display: 'flex',
-
-        });
-
-        document.body.style.overflowY = 'hidden';
-    }
-
-
-
-
-
+    
     const [isScaled, setIsScaled] = useState(false);
 
     const MobileHeaderBtnShow = () => {
@@ -75,9 +50,11 @@ export default function Index() {
 
     return (
         <div>
-            <Header MobileHeaderBtnShow={MobileHeaderBtnShow} showMobileSearchOnClick={showMobileSearchOnClick} showMobileLanguageSelectOnClick={showMobileLanguageSelectOnClick} />
-            <Banner showMobileSearchOnClick={showMobileSearchOnClick} />
-            <MobileSearch isMobileSearchVisible={isMobileSearchVisible} hideMobileSearchOnClick={hideMobileSearchOnClick} />
+            <Header toggleMobileSearch={toggleMobileSearch} MobileHeaderBtnShow={MobileHeaderBtnShow} toggleLanguage={toggleLanguage} />
+            <Banner toggleMobileSearch={toggleMobileSearch} />
+            {!isMobileSearchVisible ?
+                <MobileSearch toggleMobileSearch={toggleMobileSearch} />
+                : null}
             <Companies />
             <Coursessection />
             <Learnersreviews />
@@ -89,10 +66,13 @@ export default function Index() {
             <BecomeAnInstructor />
 
 
-            {windowWidth <= 913 && (<MobileHeader MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} showMobileLanguageSelectOnClick={showMobileLanguageSelectOnClick} />
+            {windowWidth <= 913 && (<MobileHeader toggleLanguage={toggleLanguage} MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} />
             )}
-            <ChangePageLnnguage isLanguageSelectVisible={isLanguageSelectVisible} />
-            <Footer />
+
+            {!isLanguageSelectVisible ?
+                (<ChangePageLnnguage toggleLanguage={toggleLanguage} />)
+                : null}
+            <Footer toggleLanguage={toggleLanguage}/>
         </div>
     )
 }

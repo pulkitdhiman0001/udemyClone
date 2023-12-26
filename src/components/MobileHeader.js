@@ -12,10 +12,10 @@ export default function MobileHeader({ showMobileLanguageSelectOnClick, isScaled
                     <div className='offcanvas-body'>
                         <div className='mobile-login-signup-btns'>
                             <div className='mobile-login-btn mb-3'>
-                                <a href="https://www.google.com">Log in</a>
+                                <a href="/login">Log in</a>
                             </div>
                             <div className='mobile-signup-btn'>
-                                <a href="https://www.google.com">Sign up</a>
+                                <a href="/signup">Sign up</a>
                             </div>
                         </div>
                         <hr />

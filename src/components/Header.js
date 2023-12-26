@@ -305,8 +305,8 @@ export default function Header({showMobileSearchOnClick, showMobileLanguageSelec
 
 
             </div>
-            <a className="nav-link header-login-btn" aria-current="page" href="https://www.google.com">Log in</a>
-            <a className="nav-link header-signup-btn" aria-current="page" href="https://www.google.com">Sign up</a>
+            <a className="nav-link header-login-btn" aria-current="page" href="/login">Log in</a>
+            <a className="nav-link header-signup-btn" aria-current="page" href="/signup">Sign up</a>
             <a className="nav-link header-language-btn" aria-current="page" onClick={showMobileLanguageSelectOnClick}><i className="material-icons header-language-icon">language</i></a>
         </nav>
 

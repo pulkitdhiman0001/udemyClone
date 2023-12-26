@@ -1,0 +1,74 @@
+.login-container{
+    max-width: 24rem;
+    font-size: .9rem;
+    font-weight: 900;
+    padding: 3rem 1rem;
+}
+
+
+.third-party-login{
+    display: flex;
+    justify-content: flex-start;
+    padding: .4rem;
+    border: 1px solid black;
+    align-items: center;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.third-party-login img{
+    height: 35px;
+    margin-right: .8rem;
+}
+
+.form-control{
+    border: 1px solid;
+    border-radius:0;
+}
+
+.login-container .form-control:focus{
+    border-color: transparent;
+    border: 1px solid;
+    box-shadow: none;
+    border-radius:0;
+}
+
+.form-floating>label{
+    font-size: .9rem;
+}
+
+
+.login-container-login-button button{
+    width: 100%;
+    padding: .8rem 1rem;
+    border: none;
+    background-color: #a435f0;
+    color: white;
+    font-weight: 700;
+}
+
+.login-container-login-button button:hover{
+    background-color: #8710d8;
+}
+
+.forgot-passowrd{
+    font-weight: 100;
+    padding: 1rem 0rem;
+}
+
+.forgot-passowrd a, .login-container-signup a, .organization-login a{
+    text-decoration: underline !important;
+    color: #5624d0 !important;
+    text-underline-offset: .3rem;
+    font-weight: 900 !important;
+    font-size: .8rem;
+}
+
+.forgot-passowrd a:hover, .login-container-signup a:hover, .organization-login a:hover{
+    color: #401b9c !important;
+}
+
+.login-container-signup{
+    font-size: .8rem;
+    font-weight: lighter;
+}

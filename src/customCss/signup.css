@@ -1,0 +1,51 @@
+.signup-container{
+    max-width: 24rem;
+    font-size: .9rem;
+    font-weight: 700;
+    padding: 3rem 1rem;
+}
+
+.password-strength-checker{
+    padding: .1rem 0;
+}
+
+.password-strength-checker p{
+    font-weight: 100;
+}
+
+.signup-container .form-check-input:focus {
+    box-shadow: none !important;
+    border-color: black;
+}
+
+.signup-container .form-check-input{
+    border-color: black;
+    border-radius: 0;
+}
+
+.signup-container .form-check-input:checked{
+    background-color: black;
+}
+
+.more-auth-helpers{
+    font-weight: lighter;
+}
+
+.more-auth-helpers a{
+    text-decoration: underline !important;
+    color: inherit;
+    text-underline-offset: .3rem;
+}
+
+
+
+.signup-container-login a{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+    color: #5624d0;
+}
+
+.signup-container a:hover{
+    color: #401b9c;
+}

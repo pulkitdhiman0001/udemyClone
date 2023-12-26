@@ -1,0 +1,41 @@
+.ufb-notice {
+    background: #1c1d1f;
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 2rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #3e4143;
+}
+
+.ufb-notice a{
+    color: #cec0fc;
+}
+
+.ufb-notice a:hover{
+    text-decoration: underline !important;
+    text-underline-offset: .3rem;
+}
+
+.login-container-top-companies {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    min-width: 30rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width:1030px) {
+    .ufb-notice {
+        display: block;
+        
+    }
+
+    .login-container-top-companies {
+        margin-top: 2rem;
+        gap: 1rem;
+        min-width: auto;
+    }
+}

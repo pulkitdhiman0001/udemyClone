@@ -1,15 +1,10 @@
 import React from 'react'
 
-import Header from '../components/Header'
-
-import MobileHeader from '../components/MobileHeader'
-
 import "../customCss/login.css"
 
 import google_logo from "../images/google.svg"
 import fb_logo from "../images/fb.svg"
 import apple_logo from "../images/apple.svg"
-import Footer from '../components/Footer'
 
 import UfbNotice from '../components/Ufb_notice'
 
@@ -17,8 +12,6 @@ export default function Login() {
   return (
 
     <div className='login-form'>
-      <Header />
-      <MobileHeader />
 
       <div className='container mx-auto login-container'>
         <p className='login-heading'>Log in to your Udemy account</p>
@@ -81,7 +74,6 @@ export default function Login() {
       </div>
 
       <UfbNotice />
-      <Footer />
     </div>
   )
 }

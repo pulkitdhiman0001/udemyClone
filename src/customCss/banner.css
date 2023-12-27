@@ -89,6 +89,11 @@
         font-size: 1.7rem;
         font-family: emoji;
     }
+   
+}
+
+
+@media (max-width:913px) {
     .banner-search-mobile-div{
         display: block !important;
         padding: 0 5px;

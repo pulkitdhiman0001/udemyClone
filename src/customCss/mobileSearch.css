@@ -41,7 +41,7 @@
     cursor: pointer;
 }
 
-@media (min-width:890px) {
+@media (min-width:913px) {
     .mobile-search-main {
         display: none !important;
     }

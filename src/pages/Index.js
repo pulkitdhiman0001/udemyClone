@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 // components
-import Header from "../components/Header";
+
 import Banner from '../components/Banner';
-import MobileSearch from '../components/mobileSearch';
+
 import Companies from "../components/Companies"
 import Coursessection from "../components/Courses_section"
 import Learnersreviews from "../components/Learners_reviews"
@@ -13,48 +13,12 @@ import FeaturedTopics from '../components/Featured_topics';
 import UdemyBusiness from '../components/Udemy_business';
 import CustomerStories from '../components/CustomerStories';
 import BecomeAnInstructor from '../components/BecomeAnInstructor';
-import Footer from '../components/Footer';
-import MobileHeader from '../components/MobileHeader';
-import ChangePageLnnguage from '../components/ChangePageLnnguage';
 
-// hooks
-import useWindowWidth from '../hooks/useWindowWidth';
-
-export default function Index() {
-
-    const windowWidth = useWindowWidth();
-
-
-    // toggle search mobile
-    const [isMobileSearchVisible, setMobileSearchVisible] = useState(true);
-    const toggleMobileSearch = () => {
-        setMobileSearchVisible(!isMobileSearchVisible);
-    };
-
-    const [isLanguageSelectVisible, setLanguageSelectVisible] = useState(true);
-    const toggleLanguage = () => {
-        setLanguageSelectVisible(!isLanguageSelectVisible);
-    };
-
-    
-    const [isScaled, setIsScaled] = useState(false);
-
-    const MobileHeaderBtnShow = () => {
-        setIsScaled(true)
-    };
-
-    const MobileHeaderBtnHide = () => {
-        setIsScaled(false)
-    };
-
+export default function Index({toggleMobileSearch}) {
 
     return (
         <div>
-            <Header toggleMobileSearch={toggleMobileSearch} MobileHeaderBtnShow={MobileHeaderBtnShow} toggleLanguage={toggleLanguage} />
             <Banner toggleMobileSearch={toggleMobileSearch} />
-            {!isMobileSearchVisible ?
-                <MobileSearch toggleMobileSearch={toggleMobileSearch} />
-                : null}
             <Companies />
             <Coursessection />
             <Learnersreviews />
@@ -64,15 +28,6 @@ export default function Index() {
             <UdemyBusiness />
             <CustomerStories />
             <BecomeAnInstructor />
-
-
-            {windowWidth <= 913 && (<MobileHeader toggleLanguage={toggleLanguage} MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} />
-            )}
-
-            {!isLanguageSelectVisible ?
-                (<ChangePageLnnguage toggleLanguage={toggleLanguage} />)
-                : null}
-            <Footer toggleLanguage={toggleLanguage}/>
         </div>
     )
 }

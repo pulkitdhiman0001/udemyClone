@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
-
 import "../customCss/signup.css"
-import Header from '../components/Header'
-import MobileHeader from '../components/MobileHeader'
-
 import PasswordStrengthBar from 'react-password-strength-bar';
-import Footer from '../components/Footer';
 import Ubf_notice from '../components/Ufb_notice';
 
 
@@ -17,8 +12,6 @@ export default function Signup() {
 
     return (
         <div>
-            <Header />
-            <MobileHeader />
 
             <div className='container mx-auto signup-container'>
                 <p className='signup-heading' style={{fontWeight: 900}}>Sign up and start learning</p>
@@ -74,7 +67,7 @@ export default function Signup() {
             </div>
 
             <Ubf_notice />
-            <Footer />
+           
         </div>
     )
 }

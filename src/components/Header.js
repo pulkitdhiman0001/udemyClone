@@ -4,19 +4,21 @@ import '../customCss/header.css'
 
 import logo from '../images/logo.svg'
 
+import { Link } from "react-router-dom"
+
 export default function Header({toggleMobileSearch, toggleLanguage, MobileHeaderBtnShow}) {
 
-    
-    
+
+
     return (
 
-   
+
 
         <nav className="nav align-items-center shadow bg-body rounded">
-            <button type="button" className="nav-link header-hamburger-btn" onClick={MobileHeaderBtnShow} data-bs-target="#offcanvasMobileHeader" data-bs-toggle="offcanvas" aria-current="page" style={{ display: 'none', color:'black' }}><i className="material-icons hamburger-icom">menu</i></button>
-    
+            <button type="button" className="nav-link header-hamburger-btn" onClick={MobileHeaderBtnShow} data-bs-target="#offcanvasMobileHeader" data-bs-toggle="offcanvas" aria-current="page" style={{ display: 'none', color: 'black' }}><i className="material-icons hamburger-icom">menu</i></button>
+
             <div className='d-flex udemy-header-btn'>
-                <a className="nav-link" aria-current="page" href="https://www.google.com"><img className='udemy-logo' src={logo} alt='Udemy'/></a>
+                <Link to={'/'}><a className="nav-link" aria-current="page"><img className='udemy-logo' src={logo} alt='Udemy' /></a></Link>
             </div>
 
 
@@ -159,7 +161,7 @@ export default function Header({toggleMobileSearch, toggleLanguage, MobileHeader
                                     </span>
                                 </div>
                             </li>
-                            
+
 
                         </ul>
                     </div>
@@ -262,7 +264,7 @@ export default function Header({toggleMobileSearch, toggleLanguage, MobileHeader
                     <div className='udemy-tech-nav-popper'>
                         <div className='udemy-tech-nav-popper-header mb-3'>
                             <span>
-                            Turn what you know into an opportunity and reach millions around the world.
+                                Turn what you know into an opportunity and reach millions around the world.
                             </span>
                         </div>
                         <div className='udemy-tech-nav-popper-btn'>
@@ -276,7 +278,7 @@ export default function Header({toggleMobileSearch, toggleLanguage, MobileHeader
 
 
             <div className='d-flex cart-mobile_search-right'>
-                <a className="nav-link header-search-mobile-btn" onClick={toggleMobileSearch} style={{display:'none'}} aria-current="page" href="#"><i className="material-icons header-search-mobile-icon">search</i></a>
+                <a className="nav-link header-search-mobile-btn" onClick={toggleMobileSearch} style={{ display: 'none' }} aria-current="page"><i className="material-icons header-search-mobile-icon">search</i></a>
                 <div className='cart-nav-link'>
 
                 </div>
@@ -305,12 +307,13 @@ export default function Header({toggleMobileSearch, toggleLanguage, MobileHeader
 
 
             </div>
-            <a className="nav-link header-login-btn" aria-current="page" href="/login">Log in</a>
-            <a className="nav-link header-signup-btn" aria-current="page" href="/signup">Sign up</a>
-            <a className="nav-link header-language-btn" aria-current="page" onClick={()=> toggleLanguage()}><i className="material-icons header-language-icon">language</i></a>
+            <Link to={'/login'}><a className="nav-link header-login-btn" aria-current="page">Log in</a></Link>
+
+            <Link to={'/signup'}><a className="nav-link header-signup-btn" aria-current="page">Sign up</a></Link>
+            <a className="nav-link header-language-btn" aria-current="page" onClick={toggleLanguage}><i className="material-icons header-language-icon">language</i></a>
         </nav>
 
-        
+
 
     )
 }

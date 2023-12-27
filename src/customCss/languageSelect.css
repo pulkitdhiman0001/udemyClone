@@ -75,3 +75,10 @@
         min-width: 100%;
     }
 }
+
+@media (max-width:499px) {
+    .language-modal-header{
+        margin-top: 15rem;
+       
+    }
+}

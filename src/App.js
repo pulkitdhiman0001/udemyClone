@@ -3,7 +3,7 @@ import './App.css';
 
 import React, { useState } from 'react';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import MobileSearch from './components/mobileSearch';
 import Header from "./components/Header";
 import Footer from './components/Footer';
@@ -65,6 +65,7 @@ function App() {
           <Route  path='/' element={<Index toggleMobileSearch={toggleMobileSearch} />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
+          <Route path='*' element={<Navigate to={history.back()} replace/>} />
         </Routes>
 
 

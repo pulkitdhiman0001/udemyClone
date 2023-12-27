@@ -63,8 +63,8 @@ function App() {
 
         <Routes>
           <Route  path='/' element={<Index toggleMobileSearch={toggleMobileSearch} />} />
-          <Route  path='/login' element={<Login />} />
-          <Route  path='/signup' element={<Signup />} />
+          <Route exact path='/login' element={<Login />} />
+          <Route exact path='/signup' element={<Signup />} />
         
         </Routes>
 

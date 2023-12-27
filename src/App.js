@@ -63,9 +63,9 @@ function App() {
 
         <Routes>
           <Route  path='/' element={<Index toggleMobileSearch={toggleMobileSearch} />} />
-          <Route exact path='/login' element={<Login />} />
-          <Route exact path='/signup' element={<Signup />} />
-          <Route path='*' element={<Navigate to={"/login"} replace/>} />
+          <Route  path='/login' element={<Login />} />
+          <Route  path='/signup' element={<Signup />} />
+        
         </Routes>
 
 

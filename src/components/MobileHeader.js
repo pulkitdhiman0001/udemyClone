@@ -14,12 +14,12 @@ export default function MobileHeader({ toggleLanguage, isScaled, MobileHeaderBtn
                     <div className='offcanvas-body'>
                         <div className='mobile-login-signup-btns'>
                             <div className='mobile-login-btn mb-3' data-bs-target="#offcanvasMobileHeader" data-bs-dismiss="offcanvas" onClick={MobileHeaderBtnHide}>
-                            <Link to={'login'} > <a>Log in</a></Link>
+                            <Link to={'/login'} > <a>Log in</a></Link>
                                
                             
                             </div>
                             <div className='mobile-signup-btn' data-bs-target="#offcanvasMobileHeader" data-bs-dismiss="offcanvas" onClick={MobileHeaderBtnHide}>
-                                <Link to={'signup'}><a>Sign up</a></Link>
+                                <Link to={'/signup'}><a>Sign up</a></Link>
                             </div>
                         </div>
                         <hr />

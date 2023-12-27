@@ -3,7 +3,7 @@ import './App.css';
 
 import React, { useState } from 'react';
 
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom'
 import MobileSearch from './components/mobileSearch';
 import Header from "./components/Header";
 import Footer from './components/Footer';
@@ -53,7 +53,7 @@ function App() {
         <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <Router>
+      <HashRouter>
         {!isMobileSearchVisible ?
           <MobileSearch toggleMobileSearch={toggleMobileSearch} />
           : null}
@@ -76,7 +76,7 @@ function App() {
 
         <Footer toggleLanguage={toggleLanguage} />
 
-      </Router>
+      </HashRouter>
 
 
     </>

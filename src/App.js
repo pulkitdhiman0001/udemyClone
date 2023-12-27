@@ -24,10 +24,10 @@ function App() {
   // toggle search mobile
   const [isMobileSearchVisible, setMobileSearchVisible] = useState(true);
   const toggleMobileSearch = () => {
-    setMobileSearchVisible(!isMobileSearchVisible); 
+    setMobileSearchVisible(!isMobileSearchVisible);
     console.log('test')
   };
-  
+
 
   const [isLanguageSelectVisible, setLanguageSelectVisible] = useState(true);
   const toggleLanguage = () => {
@@ -52,9 +52,9 @@ function App() {
         <strong>Skill up at scale| Learn why Udemy is trusted by 14.4K+ businesses around the world</strong>
         <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-      
+
       <Router>
-      {!isMobileSearchVisible ?
+        {!isMobileSearchVisible ?
           <MobileSearch toggleMobileSearch={toggleMobileSearch} />
           : null}
         <Header toggleMobileSearch={toggleMobileSearch} MobileHeaderBtnShow={MobileHeaderBtnShow} toggleLanguage={toggleLanguage} />
@@ -62,12 +62,12 @@ function App() {
         )}
 
         <Routes>
-          <Route exact path='/' element={<Index toggleMobileSearch={toggleMobileSearch}/>} />
+          <Route exact path='/' element={<Index toggleMobileSearch={toggleMobileSearch} />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
         </Routes>
 
-        
+
 
         {!isLanguageSelectVisible ?
           (<ChangePageLnnguage toggleLanguage={toggleLanguage} />)

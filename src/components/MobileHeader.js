@@ -1,21 +1,25 @@
 import React from 'react'
 
 import "../customCss/mobile_header.css"
+import { Link, useNavigate } from 'react-router-dom'
+import Login from '../pages/Login'
 
 export default function MobileHeader({ toggleLanguage, isScaled, MobileHeaderBtnHide }) {
 
 
     return (
         <>
-            <div style={isScaled ? {'left':'-100%'} : {'left':'0'}}>
+            <div style={isScaled ? { 'left': '-100%' } : { 'left': '0' }}>
                 <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasMobileHeader">
                     <div className='offcanvas-body'>
                         <div className='mobile-login-signup-btns'>
-                            <div className='mobile-login-btn mb-3'>
-                                <a href="/login">Log in</a>
+                            <div className='mobile-login-btn mb-3' data-bs-target="#offcanvasMobileHeader" data-bs-dismiss="offcanvas" onClick={MobileHeaderBtnHide}>
+                            <Link to={'/login'} > <a>Log in</a></Link>
+                               
+                            
                             </div>
-                            <div className='mobile-signup-btn'>
-                                <a href="/signup">Sign up</a>
+                            <div className='mobile-signup-btn' data-bs-target="#offcanvasMobileHeader" data-bs-dismiss="offcanvas" onClick={MobileHeaderBtnHide}>
+                                <Link to={'/signup'}><a>Sign up</a></Link>
                             </div>
                         </div>
                         <hr />

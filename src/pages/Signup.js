@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../customCss/signup.css"
 import PasswordStrengthBar from 'react-password-strength-bar';
 import Ubf_notice from '../components/Ufb_notice';
+import { Link } from 'react-router-dom';
 
 
 
@@ -59,7 +60,7 @@ export default function Signup() {
                         <hr style={{borderTop:'1px solid black'}}/>
 
                         <div className='signup-container-login' style={{fontSize:'.9rem'}}>
-                            <span>Already have an account? <a href="/login">Log in</a></span>
+                            <span>Already have an account? <Link to={"/login"}><a>Log in</a></Link></span>
                         </div>
                     </div>
                 </form>

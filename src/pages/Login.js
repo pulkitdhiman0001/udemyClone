@@ -7,6 +7,7 @@ import fb_logo from "../images/fb.svg"
 import apple_logo from "../images/apple.svg"
 
 import UfbNotice from '../components/Ufb_notice'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -60,7 +61,7 @@ export default function Login() {
             <hr style={{ borderTop: '1px solid black', marginTop: '0' }} />
 
             <div className='login-container-signup mb-2'>
-              <span>Don't have an account?  <a href="/signup">Sign Up</a></span>
+              <span>Don't have an account?  <Link to={'/signup'}><a>Sign Up</a></Link></span>
             </div>
 
 

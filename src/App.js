@@ -53,7 +53,7 @@ function App() {
         <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <Router exact basename='https://udemy-clone-fsiq.onrender.com'>
+      <Router>
         {!isMobileSearchVisible ?
           <MobileSearch toggleMobileSearch={toggleMobileSearch} />
           : null}

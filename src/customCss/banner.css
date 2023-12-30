@@ -51,6 +51,20 @@
 
 .carousel-control-prev, .carousel-control-next{
     width: 0%;
+    opacity: 1;
+}
+
+
+.arrow_back_btn, .arrow_forward_btn{
+    background-color: #2d2f31;
+    border-radius: 100%;
+    padding: 8px;
+
+}
+
+
+.arrow_back_btn:hover, .arrow_forward_btn:hover{
+    background-color: #3e4143 !important;
 }
 
 @media (max-width: 1390px) {
@@ -126,9 +140,3 @@ h1 {
     background-color: white;
 }
 
-.arrow_back_btn, .arrow_forward_btn{
-    background-color: black;
-    border-radius: 100%;
-    padding: 8px;
-
-}

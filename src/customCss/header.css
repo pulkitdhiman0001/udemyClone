@@ -9,7 +9,10 @@
     position: relative;
     z-index: 1010;
     padding: .6rem 1.4rem !important;
+    
 }
+
+
 
 .nav-link {
     text-decoration: none;
@@ -20,6 +23,14 @@
 .udemy-logo {
     height: 34px;
     width: 91px;
+}
+
+.categories-nav-popper .nav-category-name, .categories-sub-nav-popper .nav-category-name, .categories-nav-popper .arrow, .categories-sub-nav-popper .arrow{
+    color: #2d2f31;
+}
+
+.categories-nav-popper .nav-category-name:hover, .categories-nav-popper .arrow:hover, .categories-sub-nav-popper .nav-category-name:hover, .categories-sub-nav-popper .arrow:hover{
+    color: #5624d0;
 }
 
 .searchbox {

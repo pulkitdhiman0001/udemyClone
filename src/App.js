@@ -3,7 +3,7 @@ import './App.css';
 
 import React, { useState } from 'react';
 
-import { HashRouter, Route, Routes, Navigate } from 'react-router-dom'
+import { HashRouter, Route, Routes, useLocation  } from 'react-router-dom'
 import MobileSearch from './components/mobileSearch';
 import Header from "./components/Header";
 import Footer from './components/Footer';
@@ -16,6 +16,7 @@ import useWindowWidth from './hooks/useWindowWidth.js';
 import Index from './pages/Index.js'
 import Login from './pages/Login.js'
 import Signup from './pages/Signup.js'
+import Courses from './pages/Courses.js'
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
     setIsScaled(false)
   };
 
+  
 
   return (
     <>
@@ -57,14 +59,15 @@ function App() {
         {!isMobileSearchVisible ?
           <MobileSearch toggleMobileSearch={toggleMobileSearch} />
           : null}
-        <Header toggleMobileSearch={toggleMobileSearch} MobileHeaderBtnShow={MobileHeaderBtnShow} toggleLanguage={toggleLanguage} />
+        <Header  toggleMobileSearch={toggleMobileSearch} MobileHeaderBtnShow={MobileHeaderBtnShow} toggleLanguage={toggleLanguage}/>
         {windowWidth <= 913 && (<MobileHeader toggleLanguage={toggleLanguage} MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} />
         )}
 
         <Routes>
-          <Route  path='/' element={<Index toggleMobileSearch={toggleMobileSearch} />} />
+          <Route  path='/' element={<Index toggleMobileSearch={toggleMobileSearch}/>} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
+          <Route exact path='/courses' element={<Courses />} />
         </Routes>
 
 

@@ -5,7 +5,7 @@ import "../customCss/footer.css"
 export default function Footer({toggleLanguage}) {
     return (
         <>
-            <div className='footer bg-dark'>
+            <div className='footer'>
                 <div className='footer-links'>
 
 
@@ -51,7 +51,7 @@ export default function Footer({toggleLanguage}) {
 
 
             </div>
-            <div className='udemy-copyright bg-dark'>
+            <div className='udemy-copyright'>
                 <div className='udemy-copyright-logo'>
                     <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy" />
                 </div>

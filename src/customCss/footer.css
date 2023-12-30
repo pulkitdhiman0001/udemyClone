@@ -1,5 +1,6 @@
 .footer{
     display: flex;
+    background-color: #1c1d1f;
 }
 
 
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1c1d1f;
 }
 
 .udemy-copyright-logo img{

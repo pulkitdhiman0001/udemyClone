@@ -94,6 +94,10 @@
     font-size: 1.06rem;
 }
 
+.course-title h3 a{
+    color: #2d2f31;
+}
+
 .learners-are-viewing a{
     color: #2d2f31;
     text-decoration: none;

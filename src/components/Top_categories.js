@@ -10,15 +10,15 @@ import personal_development from "../images/personal_development.jpg"
 import business from "../images/business.jpg"
 import photography from "../images/photography.jpg"
 import music from "../images/music.jpg"
-
+import BubbleMobileView from "../components/BubbleMobileView"
 
 
 export default function Top_categories() {
   return (
     <section className='top_categories_section mx-auto mt-2'>
       <h2 className='top_categories_title'>Top categories</h2>
-
-    <div className='top_categories_mobile_view mx-auto'>
+      <BubbleMobileView/>
+    {/* <div className='top_categories_mobile_view mx-auto'>
       
       <ul className='top_categories_mobile_view_ul'>
         <li>
@@ -46,7 +46,7 @@ export default function Top_categories() {
           Music
         </li>
       </ul>
-    </div>
+    </div> */}
 
     <div className=' top_categories'>
         

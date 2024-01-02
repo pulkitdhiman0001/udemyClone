@@ -180,3 +180,69 @@
     border: 1px solid;
     padding: .5rem 1rem;
 }
+
+
+.left-panel .accordion{
+    --bs-accordion-border-color: transparent;
+}
+
+.allcourses-rating{
+    color: #6a6f73;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.rating-filter-one{
+    display: flex;
+    align-items: center;
+}
+
+.rating-filter-one .total-courses, .rating-filter-two .total-courses, .rating-filter-three .total-courses, .rating-filter-four .total-courses{
+    margin-left: .5rem;
+}
+
+
+.form-check-input:checked{
+    background-color: black;
+    filter: invert(1);
+    border: 1px solid white !important;
+}
+
+
+.video-duration-accordion, .topic-accordion{
+    color: #6a6f73; 
+    position: relative;
+    overflow: hidden;
+}
+
+.form-check-input[type=checkbox]{
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.form-check-input[type=checkbox]:checked{
+    background-color: black !important;
+    border: 1px solid white !important;
+    filter: invert(0);
+}
+
+
+
+.show_more_btn_before_click{
+    background-color: white; 
+    filter: drop-shadow(0px -28px 19px white);
+    cursor: pointer;
+    color: #5624d0;
+    font-weight: 700; 
+    font-size: .9rem; 
+}
+
+.show_more_btn_after_click{
+    background-color: white; 
+    cursor: pointer;
+    color: #5624d0;
+    font-weight: 700; 
+    font-size: .9rem; 
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import Rating from '@mui/material/Rating';
 
-
+import course_img from "../images/courses.jpg"
 
 export default function AllCourses() {
 
@@ -16,6 +16,36 @@ export default function AllCourses() {
 
     const handlesetsTopicsDivShowMore = () => {
         setsTopicsDivExpanded(!isTopicsDivExpanded);
+    };
+
+    const [isSubcategorysDivExpanded, setsSubcategorysDivExpanded] = useState(false);
+
+    const handlesetsSubcategorysDivShowMore = () => {
+        setsSubcategorysDivExpanded(!isSubcategorysDivExpanded);
+    };
+    
+    const [isLevelDivExpanded, setsLevelDivExpanded] = useState(false);
+
+    const handlesetsLevelDivShowMore = () => {
+        setsLevelDivExpanded(!isLevelDivExpanded);
+    };
+    
+    const [isLanguageDivExpanded, setsLanguageDivExpanded] = useState(false);
+
+    const handlesetsLanguageDivShowMore = () => {
+        setsLanguageDivExpanded(!isLanguageDivExpanded);
+    };
+
+    const [isPriceDivExpanded, setsPriceDivExpanded] = useState(false);
+
+    const handlesetsPriceDivShowMore = () => {
+        setsPriceDivExpanded(!isPriceDivExpanded);
+    };
+
+    const [isSubtitlesDivExpanded, setsSubtitlesDivExpanded] = useState(false);
+
+    const handlesetsSubtitlesDivShowMore = () => {
+        setsSubtitlesDivExpanded(!isSubtitlesDivExpanded);
     };
 
     return (
@@ -318,6 +348,399 @@ export default function AllCourses() {
                                                 {isTopicsDivExpanded ? 'show less' : 'show more'}
                                             </div>
 
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Subcategory
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                            <div class="accordion-body px-1 py-1 topic-accordion" style={{ maxHeight: isSubcategorysDivExpanded ? '' : '8rem' }}>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Web Developement (546)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Programming Languages (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Data Science (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Mobile Developement (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Game Developement
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Database Design & Developement (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Software Engineering (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Software Developement Tools (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Software Testing (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        No-Code Developement (801)
+                                                    </label>
+                                                </div>
+
+
+
+
+                                            </div>
+                                            <div className={isSubcategorysDivExpanded ? `py-3 show_more_btn_after_click` : `py-4 show_more_btn_before_click`}
+                                                onClick={handlesetsSubcategorysDivShowMore}>
+                                                {isSubcategorysDivExpanded ? 'show less' : 'show more'}
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Level
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                            <div class="accordion-body px-1 py-1 topic-accordion" style={{ maxHeight: isLevelDivExpanded ? '' : '8rem' }}>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        All Levels (546)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Beginner (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Intermediate (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Expert (801)
+                                                    </label>
+                                                </div>
+
+                                        
+                                            </div>
+
+                                            <div className={isLevelDivExpanded ? `py-3 show_more_btn_after_click` : `py-4 show_more_btn_before_click`}
+                                                onClick={handlesetsLevelDivShowMore}>
+                                                {isLevelDivExpanded ? 'show less' : 'show more'}
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Language
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                            <div class="accordion-body px-1 py-1 topic-accordion" style={{ maxHeight: isLanguageDivExpanded ? '' : '8rem' }}>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        English (10,000)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    हिन्दी (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Telugu (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Nederlands (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Português (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Español (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Türkçe (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    日本語 (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Français (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    العربية (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    中文 (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Deutsch (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Русский (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    한국어 (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Polski (801)
+                                                    </label>
+                                                </div>
+
+                                        
+                                            </div>
+
+                                            <div className={isLanguageDivExpanded ? `py-3 show_more_btn_after_click` : `py-4 show_more_btn_before_click`}
+                                                onClick={handlesetsLanguageDivShowMore}>
+                                                {isLanguageDivExpanded ? 'show less' : 'show more'}
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Price
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                                            <div class="accordion-body px-1 py-1 topic-accordion" style={{ maxHeight: isPriceDivExpanded ? '' : '8rem' }}>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Paid (10,000)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Free (801)
+                                                    </label>
+                                                </div>
+
+                                            
+
+                                        
+                                            </div>
+
+                                            <div className={isPriceDivExpanded ? `py-3 show_more_btn_after_click` : `py-4 show_more_btn_before_click`}
+                                                onClick={handlesetsPriceDivShowMore}>
+                                                {isPriceDivExpanded ? 'show less' : 'show more'}
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Subtitles
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                                            <div class="accordion-body px-1 py-1 topic-accordion" style={{ maxHeight: isSubtitlesDivExpanded ? '' : '8rem' }}>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        English (10,000)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    हिन्दी (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Telugu (801)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Nederlands (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Português (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Español (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Türkçe (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    日本語 (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Français (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    العربية (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    中文 (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Deutsch (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Русский (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    한국어 (801)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check py-1">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Polski (801)
+                                                    </label>
+                                                </div>
+
+                                        
+                                            </div>
+
+                                            <div className={isSubtitlesDivExpanded ? `py-3 show_more_btn_after_click` : `py-4 show_more_btn_before_click`}
+                                                onClick={handlesetsSubtitlesDivShowMore}>
+                                                {isSubtitlesDivExpanded ? 'show less' : 'show more'}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

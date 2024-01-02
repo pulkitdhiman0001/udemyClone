@@ -103,3 +103,80 @@
         display: block;
     }
 }
+
+
+/* popular instructors */
+
+.instructor-rating{
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.instructor-rating i{
+    font-size:1.3rem;
+    padding: 2px;
+}
+
+
+
+/* ALL COURSES */
+
+.not-sure-div{
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .popular-instructors-card-main img{
+        height: 4rem;
+    }
+
+    .popular-instructors-card-col, .popular-instructors-card-col-img{
+        width: auto;
+    }
+
+    .popular-instructors-card-main{
+        padding: 1rem 0px 0px 0.5rem !important;
+        min-width: 17rem !important;
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .popular-instructors-card-main{
+        padding: 1rem 0px 0px 1.5rem !important;
+    }
+}
+
+
+
+/* filter-sort-results */
+
+.filter-sort-results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
+    padding:  1rem;
+    margin-right: 1rem;
+}
+
+.sort{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid;
+    padding: .5rem 1rem;
+}

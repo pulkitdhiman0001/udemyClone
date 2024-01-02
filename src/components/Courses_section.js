@@ -88,7 +88,7 @@ export default function Courses_section() {
 
             </div>
 
-       
+
 
             <div className='courses-section-content' >
 
@@ -359,7 +359,198 @@ export default function Courses_section() {
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                <div className="accordion-body">
+
+                                    <div className='learners-are-viewing-mobileview w-100' >
+
+
+
+                                        <section style={{ position: 'relative' }}>
+
+                                            <div class="course-cards uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider={' finite:true'} >
+
+                                                <ul class="uk-slider-items uk-grid uk-grid-small">
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </section >
+                                    </div >
+                                </div>
                             </div>
                         </div>
                         <div className="accordion-item">
@@ -369,7 +560,198 @@ export default function Courses_section() {
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div className="accordion-body">
+
+                                    <div className='learners-are-viewing-mobileview w-100' >
+
+
+
+                                        <section style={{ position: 'relative' }}>
+
+                                            <div class="course-cards uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider={' finite:true'} >
+
+                                                <ul class="uk-slider-items uk-grid uk-grid-small">
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-width-4-5">
+                                                        <div className='card-container'>
+                                                            <div className='course-img'>
+                                                                <img src={course_img} alt='course-img' />
+                                                            </div>
+                                                            <div className='course-details'>
+                                                                <div className='course-title'>
+                                                                    <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                                                </div>
+                                                                <div className='instructor-name'>
+                                                                    Dr. Angela Yu
+                                                                </div>
+                                                                <div className='rating'>
+                                                                    <div className='rating-in-no'>
+                                                                        4.7
+                                                                    </div>
+                                                                    <div className='rating-in-stars'>
+                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                                                    </div>
+                                                                    <div className='no-of-reviews'>
+                                                                        (334,170)
+                                                                    </div>
+                                                                </div>
+                                                                <div className='course-price'>
+                                                                    ₹3,199
+                                                                </div>
+                                                                <div style={{ display: 'flex' }}>
+                                                                    <div className='seller-badge'>
+                                                                        <h6><span className="badge text-black">Bestseller</span></h6>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </section >
+                                    </div >
+                                </div>
                             </div>
                         </div>
                     </div>

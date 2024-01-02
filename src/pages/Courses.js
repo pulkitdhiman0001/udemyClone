@@ -15,6 +15,8 @@ import useWindowWidth from '../hooks/useWindowWidth'
 import Rating from '@mui/material/Rating';
 
 import BubbleMobileView from "../components/BubbleMobileView"
+import PopularInstructors from "../components/PopularInstructors"
+import AllCourses from "../components/AllCourses"
 
 export default function Courses() {
 
@@ -32,7 +34,7 @@ export default function Courses() {
 
       <div className='courses mx-auto'>
 
-        <h2 className='courseName-heading' style={{fontWeight:'700'}}>Development Courses</h2>
+        <h2 className='courseName-heading' style={{ fontWeight: '700' }}>Development Courses</h2>
         <h3 className='courseName-subHeading'>Courses to get you started</h3>
 
 
@@ -809,60 +811,23 @@ export default function Courses() {
           </div>
         </div>
 
-        
+
 
         <div className='TopicsUnitCarousel'>
-          <h3 style={{fontWeight:'700'}}>Popular topics</h3>
+          <h3 style={{ fontWeight: '700' }}>Popular topics</h3>
           {windowWidth > 600 ?
-          <TopicsUnitCarousel />
-        : <BubbleMobileView />}
+            <TopicsUnitCarousel />
+            : <BubbleMobileView />}
         </div>
+
+
+
+        <PopularInstructors />
+        <AllCourses />
+
       </div>
 
-      {/* <section style={{ position: 'relative' }}>
-          <div className='course-cards'>
 
-
-            <div className="uk-visible-toggle uk-dark" tabIndex="-1" uk-slider="sets: true; finite: true" style={{ padding: '6rem 0 5rem 0', marginTop: '-2rem' }}>
-
-              <ul className={windowWidth < 1200 ? "uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid uk-grid-small" : windowWidth < 980 ? "uk-slider-items uk-child-width-1-2 uk-child-width-1-2@m uk-grid uk-grid-small" : "uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid-small"}>
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-              </ul>
-
-
-
-              <div className='courses-section-btns'>
-                <a className='courses-section-left-learners-are-viewing-arrow' href uk-slider-item="previous" style={{ position: 'absolute', left: '-1.2rem' }}>
-                  <i className='material-icons courses-section-left-learners-are-viewing-arrow-icon' >chevron_left</i>
-
-                </a>
-
-
-
-                <a className='courses-section-right-learners-are-viewing-arrow' href uk-slider-item="next" style={{ position: 'absolute', right: '-1.2rem' }}>
-                  <i className='material-icons courses-section-right-learners-are-viewing-arrow-icon'>chevron_right</i>
-                </a>
-
-
-              </div>
-
-            </div>
-
-
-
-
-          </div>
-
-
-        </section > */}
 
 
 

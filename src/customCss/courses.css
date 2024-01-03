@@ -163,13 +163,17 @@
     justify-content: space-between;
 }
 
-.filter{
+.filter, .filter-for-mobile{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid;
     padding:  1rem;
     margin-right: 1rem;
+}
+
+.filter-for-mobile{
+    display: none;
 }
 
 .sort{
@@ -182,7 +186,7 @@
 }
 
 
-.left-panel .accordion{
+.left-panel .accordion, .offcanvas .accordion{
     --bs-accordion-border-color: transparent;
 }
 
@@ -194,7 +198,7 @@
 }
 
 
-.rating-filter-one{
+.rating-filter-one, .rating-filter-two, .rating-filter-three, .rating-filter-four{
     display: flex;
     align-items: center;
 }
@@ -245,4 +249,101 @@
     color: #5624d0;
     font-weight: 700; 
     font-size: .9rem; 
+}
+
+.right-panel{
+    min-width: 36rem;
+    padding: 0 1rem;
+}
+
+.allCourses-card{
+    display: flex;
+    gap: 1rem;
+    border-top: 1px solid #d1d7dc;
+    padding: 2rem 0;
+}
+
+.allCourses-card-img{
+    width: 24rem;
+}
+
+
+
+.allCourses-card-details{
+    min-width: 12rem;
+    font-size: .8rem;
+}
+
+.allcourse-card-price-span{
+    margin-left: 2rem;
+}
+
+
+.offcanvas .allcourses-rating{
+    font-size: .7rem;
+}
+
+.offcanvas-footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.offcanvas-footer button{
+    color: white;
+    background-color: #2d2f31;
+    border: none;
+    width: 95%;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media (max-width:700px) {
+
+    .filter{
+        display: none;
+    }
+
+    .filter-for-mobile{
+        display: flex;
+    }
+
+    .filter-sort-results .results{
+        display: none;
+    }
+
+    .allCourses-card{
+        display: block;
+        width: fit-content;
+    }
+
+    .allCourses-card-img{
+        width: auto;
+    }
+
+    .right-panel{
+        min-width: 100%;
+    }
+
+    .allcourse-card-price-span{
+        margin-left: 0 !important;
+    }
+
+    .allcourse-card-price{
+        margin-top: 1rem;
+    }
+
+    .allCourses-card-details{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:980px) {
+    .left-panel{
+        display: none;
+    }
+    .right-panel{
+        padding: 0;
+    }
 }

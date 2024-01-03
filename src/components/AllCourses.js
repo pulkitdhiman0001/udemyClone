@@ -52,7 +52,7 @@ export default function AllCourses() {
         <div>
 
             {/* offcanvas */}
-            <div class="offcanvas offcanvas-end" style={{width:'18rem'}} tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end allCourses-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header shadow p-3 bg-body rounded">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">10,000 results</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

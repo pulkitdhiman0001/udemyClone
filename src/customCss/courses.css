@@ -278,6 +278,9 @@
     margin-left: 2rem;
 }
 
+.allCourses-offcanvas{
+    width: 18rem !important;
+}
 
 .offcanvas .allcourses-rating{
     font-size: .7rem;

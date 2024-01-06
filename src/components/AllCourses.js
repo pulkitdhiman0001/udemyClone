@@ -737,7 +737,7 @@ export default function AllCourses() {
                     </div>
                 </div>
                 <div className='offcanvas-footer w-100'>
-                    <button type='button' data-bs-dismiss="offcanvas-lg">
+                    <button type='button' data-bs-dismiss="offcanvas" data-bs-target="#offcanvasRight">
                         Done
                     </button>
                 </div>

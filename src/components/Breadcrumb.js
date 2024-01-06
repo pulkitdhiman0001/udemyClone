@@ -37,9 +37,21 @@ export default function Breadcrumb() {
                 </li>
             </ul>
 
-            <div className='popover-more'>
+            <div className='popover-more' style={{ cursor: 'pointer' }}>
                 <i className='material-icons'>more_vert</i>
             </div>
+            <div uk-dropdown="mode: click; pos: bottom-left" style={{minWidth:'20rem', padding:'1rem'}}>
+                <div className='popover-more-item'>
+                    Software Engineer
+                </div>
+                <div className='popover-more-item'>
+                    Software Developement Tools
+                </div>
+                <div className='popover-more-item'>
+                    No-Code Developement
+                </div>
+            </div>
+
         </div>
     )
 }

@@ -19,6 +19,12 @@ export default function AllCourses() {
         }, 100);
     }
 
+    const [selectedSort, setSelectedSort] = useState('Most Popular');
+
+    const handleSortItemClick = (value) => {
+        setSelectedSort(value);
+    };
+
     const [isVideoDurationDivExpanded, setVideoDurationDivExpanded] = useState(false);
 
     const handlesetVideoDurationDivShowMore = () => {
@@ -764,10 +770,17 @@ export default function AllCourses() {
                     <div className='sort'>
                         <div className='Sort-by'>
                             <div style={{ fontSize: '.9rem', fontWeight: 'lighter' }}>Sort by</div>
-                            <div>Most Popular</div>
+                            <div className='sort-query'>{selectedSort}</div>
                         </div>
                         <i className='material-icons' style={{ padding: 0, background: 'transparent', color: 'black', fontSize: '1.5rem', marginLeft: '1rem' }}>keyboard_arrow_down</i>
-
+        
+                    </div>
+                    <div uk-dropdown="mode: hover, click" className='p-0'>
+                        <ul class="list-group">
+                            <li class="list-group-item" onClick={() => handleSortItemClick('Most Popular')}>Most Popular</li>
+                            <li class="list-group-item" onClick={() => handleSortItemClick('Higest Rated')}>Higest Rated</li>
+                            <li class="list-group-item" onClick={() => handleSortItemClick('Newest')}>Newest</li>
+                        </ul>
                     </div>
 
                     <div className='clear-filters-btn d-none' style={{ display: 'flex', alignItems: 'center', marginLeft: '1rem', fontSize: '.9rem', fontWeight: '900', color: '#5624d0' }}>
@@ -1499,6 +1512,47 @@ export default function AllCourses() {
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
                     </div>
+
+                    <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                        <div className='what-you-will-learn'>
+                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                        </div>
+                        <div className='what-course-provide'>
+                            <ul>
+                                <li>
+
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will learn how to leverage the power of Python to solve tasks.</span>
+
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will build games and programs that use Python libraries.</span></li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will be able to use Python for your own work problems or personal projects.</span></li>
+                            </ul>
+                        </div>
+
+                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                            <div className='add-to-cart'>
+                                <button style={{width:'20rem'}}>Add to cart</button>
+                            </div>
+                            <div className='like-btn'>
+                                <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
+                                favorite_border
+                                </span>
+                            
+                            </div>
+                        </div>
+                    </div>
+
                     <div className='allCourses-card mx-auto'>
                         <div className='allCourses-card-img'>
                             <img src={course_img} alt="" className='' />
@@ -1544,6 +1598,46 @@ export default function AllCourses() {
 
                         <div className='allcourse-card-price' style={{ fontWeight: '700' }}>
                             <span className='allcourse-card-price-span'>₹389</span>
+                        </div>
+                    </div>
+
+                    <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                        <div className='what-you-will-learn'>
+                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                        </div>
+                        <div className='what-course-provide'>
+                            <ul>
+                                <li>
+
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will learn how to leverage the power of Python to solve tasks.</span>
+
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will build games and programs that use Python libraries.</span></li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will be able to use Python for your own work problems or personal projects.</span></li>
+                            </ul>
+                        </div>
+
+                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                            <div className='add-to-cart'>
+                                <button style={{width:'20rem'}}>Add to cart</button>
+                            </div>
+                            <div className='like-btn'>
+                                <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
+                                favorite_border
+                                </span>
+                            
+                            </div>
                         </div>
                     </div>
 
@@ -1595,6 +1689,49 @@ export default function AllCourses() {
                         <div className='allcourse-card-price' style={{ fontWeight: '700' }}>
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
+                    </div>
+
+
+                      <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                        <div className='what-you-will-learn'>
+                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                        </div>
+                        <div className='what-course-provide'>
+                            <ul>
+                                <li>
+
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will learn how to leverage the power of Python to solve tasks.</span>
+
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will build games and programs that use Python libraries.</span></li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will be able to use Python for your own work problems or personal projects.</span></li>
+                            </ul>
+                        </div>
+
+                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                            <div className='add-to-cart'>
+                                <button style={{width:'20rem'}}>Add to cart</button>
+                            </div>
+                            <div className='like-btn'>
+                                <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
+                                favorite_border
+                                </span>
+                            
+                            </div>
+                        </div>
+                    
+                    
                     </div>
                 </div>
             </div>

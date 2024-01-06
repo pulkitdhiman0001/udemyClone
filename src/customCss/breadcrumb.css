@@ -32,6 +32,10 @@
     margin-left: 5rem;
 }
 
+.popover-more-item{
+    margin-bottom: .7rem;
+}
+
 .breadcrumb ul li:first-child img{
    height: 3rem;
    margin-left: 1rem;

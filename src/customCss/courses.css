@@ -274,7 +274,7 @@
 
 
 .allCourses-card-details{
-    min-width: 12rem;
+    max-width: 39rem;
     font-size: .8rem;
 }
 

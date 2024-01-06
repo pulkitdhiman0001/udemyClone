@@ -1458,7 +1458,7 @@ export default function AllCourses() {
                         </div>
                         <div className='allCourses-card-details'>
                             <h5 class="card-title" style={{ fontWeight: 'bold' }}>The Complete Python Bootcamp From Zero to Hero in Python</h5>
-                            <p class="card-text" style={{ marginTop: 0, marginBottom: '.3rem' }}>Learn Python like a Professional  Start from the basics and go all the way to creating your own applications and games</p>
+                            <p class="card-text" style={{ marginTop: '.3rem', marginBottom: '.3rem' }}>Learn Python like a Professional  Start from the basics and go all the way to creating your own applications and games</p>
                             <span className='instructor-name'>By Someone</span>
 
 
@@ -1505,7 +1505,7 @@ export default function AllCourses() {
                         </div>
                         <div className='allCourses-card-details'>
                             <h5 class="card-title" style={{ fontWeight: 'bold' }}>The Complete Python Bootcamp From Zero to Hero in Python</h5>
-                            <p class="card-text" style={{ marginTop: 0, marginBottom: '.3rem' }}>Learn Go ("Golang") from the ground up & in great depth by building multiple demo projects, incl. a REST API</p>
+                            <p class="card-text" style={{ marginTop: '.3rem', marginBottom: '.3rem' }}>Learn Go ("Golang") from the ground up & in great depth by building multiple demo projects, incl. a REST API</p>
                             <span className='instructor-name'>By Someone</span>
 
 
@@ -1555,7 +1555,7 @@ export default function AllCourses() {
                         </div>
                         <div className='allCourses-card-details'>
                             <h5 class="card-title" style={{ fontWeight: 'bold' }}>The Complete Python Bootcamp From Zero to Hero in Python</h5>
-                            <p class="card-text" style={{ marginTop: 0, marginBottom: '.3rem' }}>Learn Go ("Golang") from the ground up & in great depth by building multiple demo projects, incl. a REST API</p>
+                            <p class="card-text" style={{ marginTop: '.3rem', marginBottom: '.3rem' }}>Learn Go ("Golang") from the ground up & in great depth by building multiple demo projects, incl. a REST API</p>
                             <span className='instructor-name'>By Someone</span>
 
 

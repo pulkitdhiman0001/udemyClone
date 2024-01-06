@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-indiana-drag-scroll": "^2.2.0",
     "react-laag": "^2.0.5",
+    "react-loading-skeleton": "^3.3.1",
     "react-password-strength-bar": "^0.4.1",
     "react-router-dom": "^6.21.1",
     "react-scripts": "^5.0.1",

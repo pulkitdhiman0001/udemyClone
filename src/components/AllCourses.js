@@ -4,6 +4,7 @@ import Rating from '@mui/material/Rating';
 
 import course_img from "../images/courses.jpg"
 import useWindowWidth from '../hooks/useWindowWidth';
+import TryUdemyBusiness from './TryUdemyBusiness';
 
 export default function AllCourses() {
 
@@ -1545,6 +1546,9 @@ export default function AllCourses() {
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
                     </div>
+
+                    <TryUdemyBusiness />
+
                     <div className='allCourses-card mx-auto'>
                         <div className='allCourses-card-img'>
                             <img src={course_img} alt="" className='' />
@@ -1598,7 +1602,25 @@ export default function AllCourses() {
 
 
 
+            <div className='pagination' style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
 
+                <span class="material-symbols-outlined" style={{ borderRadius: '100%', border: '1px solid', padding: '7px', cursor: 'pointer' }}>
+                    chevron_left
+                </span>
+                <div className='page' style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: '12rem' }}>
+                    <span style={{ textDecoration: 'underline', textUnderlineOffset: '.4rem' }}>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+                    <span>625</span>
+                </div>
+                <span class="material-symbols-outlined" style={{ borderRadius: '100%', border: '1px solid', padding: '7px', cursor: 'pointer' }}>
+                    chevron_right
+                </span>
+
+            </div>
 
         </div>
     )

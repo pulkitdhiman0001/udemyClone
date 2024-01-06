@@ -26,14 +26,14 @@ export default function Banner({ toggleMobileSearch }) {
                 <div id="bannerCarousel" className="carousel slide" data-bs-ride="carousel" style={{minHeight:'15rem'}}>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            {windowWidth > 700 ? (<img src={banner_img} className="d-block w-100" alt="banner" />) : (<img src={mobile_banner} className="d-block w-100 image-fluid" alt="Mobile-Banner" />)}
+                            {windowWidth > 700 ? (<img src={banner_img} loading='lazy' className="d-block w-100" alt="banner" />) : (<img src={mobile_banner} loading='lazy' className="d-block w-100 image-fluid" alt="Mobile-Banner" />)}
                             <div className='banner-heading shadow bg-body rounded'>
                                 <h1>Last day to save!</h1>
                                 <p style={{ marginTop: 0 }}>Enjoy the freedom to learn the way you want (for less). Log in for special savings on courses.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            {windowWidth > 700 ? (<img src={banner2} className="d-block w-100" alt="banner" />) : (<img src={mobile_banner2} className="d-block w-100 image-fluid" alt="Mobule-Banner" />)}
+                            {windowWidth > 700 ? (<img src={banner2} loading="lazy" className="d-block w-100" alt="banner" />) : (<img src={mobile_banner2} loading='lazy' className="d-block w-100 image-fluid" alt="Mobule-Banner" />)}
                             <div className='banner-heading shadow bg-body rounded'>
                                 <h1>Skills that drive you forward</h1>
                                 <p style={{ marginTop: 0 }}>Technology and the world of work change fast — with us, you’re faster. Get the skills to achieve goals and stay competitive.</p>

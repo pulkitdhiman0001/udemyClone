@@ -310,6 +310,58 @@
     border: none;
 }
 
+
+.TryUdemyBusiness{
+    display: flex;
+    padding: 2rem 1rem;
+    border:1px solid #d1d7dc;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+   
+}
+
+.TryUdemyBusiness-first{
+    max-width: 22rem;
+    margin-right: 1rem;
+}
+
+.TryUdemyBusiness-title h1{
+    font-size: 1.5rem;
+}
+
+/* .TryUdemyBusiness-companies{
+    max-width: 20rem;
+} */
+
+.TryUdemyBusiness-companies img{
+    margin: 0rem 1rem 1rem 0rem;
+}
+
+
+.TryUdemyBusiness-btn button{
+    padding: .8rem;
+    font-size: smaller;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid #2d2f31;
+    width: 10rem;
+}
+
+.TryUdemyBusiness-btn button:hover{
+    background-color: #1739531f;
+}
+
+@media (max-width:750px) {
+    .TryUdemyBusiness{
+        display: block;
+    }
+
+    .TryUdemyBusiness-companies{
+        margin-top: 1rem;
+    }
+}
+
 @media (max-width:700px) {
 
     

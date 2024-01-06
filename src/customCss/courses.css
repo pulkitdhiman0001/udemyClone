@@ -131,19 +131,23 @@
 }
 
 @media (max-width: 768px) {
-    .popular-instructors-card-main img{
-        height: 4rem;
+
+    .popular-instructors .card{
+        text-align: center;
+    }
+    
+    .popular-instructors .card img{
+        height: 5rem !important;
     }
 
-    .popular-instructors-card-col, .popular-instructors-card-col-img{
-        width: auto;
+    .popular-instructors .card-body{
+        padding: 0;
+        margin-top: 1rem;
     }
 
-    .popular-instructors-card-main{
-        padding: 1rem 0px 0px 0.5rem !important;
-        min-width: 17rem !important;
+    .popular-instructors .instructor-rating{
+        justify-content: center;
     }
-
 
 }
 
@@ -282,7 +286,7 @@
     width: 18rem !important;
 }
 
-.offcanvas .allcourses-rating{
+.offcanvas-lg .allcourses-rating{
     font-size: .7rem;
 }
 
@@ -302,15 +306,13 @@
     font-size: 1.2rem;
 }
 
+.accordion-item{
+    border: none;
+}
+
 @media (max-width:700px) {
 
-    .filter{
-        display: none;
-    }
-
-    .filter-for-mobile{
-        display: flex;
-    }
+    
 
     .filter-sort-results .results{
         display: none;
@@ -326,7 +328,8 @@
     }
 
     .right-panel{
-        min-width: 100%;
+        min-width: 100% !important;
+        padding: 0 !important;
     }
 
     .allcourse-card-price-span{
@@ -342,11 +345,25 @@
     }
 }
 
-@media (max-width:980px) {
+@media (max-width:990px) {
     .left-panel{
         display: none;
     }
     .right-panel{
         padding: 0;
+    }
+
+    .filter{
+        display: none;
+    }
+
+    .filter-for-mobile{
+        display: flex;
+    }
+}
+
+@media (min-width:990px) {
+    .allCourses-offcanvas{
+        display: none;
     }
 }

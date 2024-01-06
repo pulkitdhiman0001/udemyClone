@@ -39,11 +39,14 @@ function App() {
   const [isScaled, setIsScaled] = useState(false);
 
   const MobileHeaderBtnShow = () => {
-    setIsScaled(true)
+    setIsScaled(true);
   };
 
   const MobileHeaderBtnHide = () => {
-    setIsScaled(false)
+    setIsScaled(false);    
+
+    document.body.style.overflow = 'scroll !important';
+
   };
 
   
@@ -60,8 +63,8 @@ function App() {
           <MobileSearch toggleMobileSearch={toggleMobileSearch} />
           : null}
         <Header  toggleMobileSearch={toggleMobileSearch} MobileHeaderBtnShow={MobileHeaderBtnShow} toggleLanguage={toggleLanguage}/>
-        {windowWidth <= 913 && (<MobileHeader toggleLanguage={toggleLanguage} MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} />
-        )}
+        <MobileHeader toggleLanguage={toggleLanguage} MobileHeaderBtnHide={MobileHeaderBtnHide} isScaled={isScaled} isLanguageSelectVisible={isLanguageSelectVisible} />
+       
 
         <Routes>
           <Route  path='/' element={<Index toggleMobileSearch={toggleMobileSearch}/>} />

@@ -1,25 +1,11 @@
-.mobile-header{
-    width: 18rem;
-    overflow: auto;
-    background-color: white;
-    padding: 1rem 0 0 0;
-    height: 100vh;
-    left: 0;
-    overflow-x: hidden;
+
+.offcanvasMobileHeader li .arrow{
+    cursor:pointer
 }
 
-.mobile-header-wrapper{
-    width: 100%;
-    top: 0;
-    z-index: 10000;
-    position: fixed;
-    /* backdrop-filter: brightness(.3); */
-    left: 0rem;
-    transition: left 0.3s linear;
-    
-}
-
-
+/* .mobile-sub-menu-header{
+    background-color: #f7f9fa;
+} */
 
 .mobile-login-signup-btns a {
     color: #5624d0;
@@ -27,7 +13,11 @@
     font-weight: 400;
 }
 
-
+#collapseSubMenu .mobile-header-links,
+#collapseAllCategories .mobile-header-links,
+#collapseAllcategorySubMenu .mobile-header-links{
+    padding: 1rem;
+}
 
 .mobile-header-heading,
 .more-from-udemy-heading {
@@ -78,7 +68,7 @@
 }
 
 
-.mobile-sub-header, .mobile-all-categories-sub-header, .mobile-all-categories-sub-sub-header{
+/* .mobile-sub-header, .mobile-all-categories-sub-header, .mobile-all-categories-sub-sub-header{
     width: 18rem;
     overflow: auto;
     background-color: white;
@@ -90,21 +80,27 @@
     z-index: 10002;
     position: fixed;
     transition: .3s all ease;
-}
+} */
 
 
-.mobile-sub-menu-btn, .mobile-all-categories-sub-menu-btn, .mobile-back-to-all-categories-sub-btn{
+.mobile-sub-menu-btn, .mobile-all-categories-sub-menu-btn{
     display: flex;
     align-items: center;
-    padding: 0 1rem;
     cursor: pointer;
-    color: black
+    color: black;
+    padding: 1rem;
+    background-color: #f7f9fa;
 }
 
-.mobile-header-sub-sub-heading{
+.mobile-back-to-all-categories-sub-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     color: black;
-    font-weight: 700;
+    padding: 0 1rem;
 }
+
+
 
 .close-btn-before{
     top: 1rem;
@@ -149,9 +145,17 @@
     .close-btn{
         display: none;
     }
+
+  
+}
+
+@media (min-width:991px) {
+    .offcanvas-lg{
+        display: none;
+    }
 }
 
 
-.offcanvas{
+.offcanvas-lg{
     width: 16rem !important;
 }

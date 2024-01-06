@@ -3,8 +3,20 @@ import React, { useState } from 'react'
 import Rating from '@mui/material/Rating';
 
 import course_img from "../images/courses.jpg"
+import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function AllCourses() {
+
+    const windowWidth = useWindowWidth();
+
+
+    // toggle all courses
+    const [iscollapsed, setiscollapsed] = useState(true)
+    const handleCollapse = () => {
+        setTimeout(() => {
+            setiscollapsed(!iscollapsed)
+        }, 100);
+    }
 
     const [isVideoDurationDivExpanded, setVideoDurationDivExpanded] = useState(false);
 
@@ -52,10 +64,10 @@ export default function AllCourses() {
         <div>
 
             {/* offcanvas */}
-            <div class="offcanvas offcanvas-end allCourses-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-lg offcanvas-end allCourses-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header shadow p-3 bg-body rounded">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">10,000 results</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
                 </div>
                 <div class="offcanvas-body">
                     <div class="card card-body" style={{ padding: 0 }}>
@@ -724,8 +736,8 @@ export default function AllCourses() {
                     </div>
                 </div>
                 <div className='offcanvas-footer w-100'>
-                    <button type='button' data-bs-dismiss="offcanvas">
-                    Done
+                    <button type='button' data-bs-dismiss="offcanvas-lg">
+                        Done
                     </button>
                 </div>
             </div>
@@ -740,7 +752,7 @@ export default function AllCourses() {
 
             <div className='filter-sort-results py-4'>
                 <div style={{ display: 'flex' }} type="button">
-                    <div className='filter' style={{ fontWeight: 700 }} data-bs-toggle="collapse" data-bs-target="#collapsFilter" aria-expanded="false">
+                    <div className='filter' style={{ fontWeight: 700 }} onClick={handleCollapse} data-bs-toggle="collapse" data-bs-target="#collapsFilter" aria-expanded="false">
                         <i className='material-icons' style={{ padding: 0, background: 'transparent', color: 'black', fontSize: '1.5rem' }}>filter_list</i>
                         <span>Filter</span>
                     </div>
@@ -757,7 +769,7 @@ export default function AllCourses() {
 
                     </div>
 
-                    <div className='clear-filters-btn d-none' style={{display:'flex',  alignItems:'center', marginLeft:'1rem',fontSize:'.9rem', fontWeight:'900', color:'#5624d0'}}>
+                    <div className='clear-filters-btn d-none' style={{ display: 'flex', alignItems: 'center', marginLeft: '1rem', fontSize: '.9rem', fontWeight: '900', color: '#5624d0' }}>
                         <span>Clear filters</span>
                     </div>
                 </div>
@@ -1438,7 +1450,7 @@ export default function AllCourses() {
                     </div>
                 </div>
 
-                <div className='right-panel'>
+                <div className='right-panel' style={{ minWidth: iscollapsed ? '36rem' : '100%', padding: '0 1rem' }}>
                     <div className='allCourses-card mx-auto'>
                         <div className='allCourses-card-img'>
                             <img src='https://img-b.udemycdn.com/course/240x135/567828_67d0.jpg' alt="" className='' />

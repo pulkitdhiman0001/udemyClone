@@ -278,6 +278,14 @@
     padding: 2rem 0;
 }
 
+.allCourses-card:first-child{
+    border-top: none;
+}
+
+.allCourses-card:nth-last-child(n-1){
+    border-bottom: none;
+}
+
 .allCourses-card-img {
     width: 24rem;
 }

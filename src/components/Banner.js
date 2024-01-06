@@ -23,7 +23,7 @@ export default function Banner({ toggleMobileSearch }) {
             <div className='container banner'>
 
 
-                <div id="bannerCarousel" className="carousel slide" data-bs-ride="carousel" style={{minHeight:'15rem'}}>
+                <div id="bannerCarousel" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             {windowWidth > 700 ? (<img src={banner_img} loading='lazy' className="d-block w-100" alt="banner" />) : (<img src={mobile_banner} loading='lazy' className="d-block w-100 image-fluid" alt="Mobile-Banner" />)}

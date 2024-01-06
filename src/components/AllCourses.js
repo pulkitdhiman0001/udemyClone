@@ -787,7 +787,7 @@ export default function AllCourses() {
                         <span>Clear filters</span>
                     </div>
                 </div>
-                <div className='results'>
+                <div className='results' style={{fontWeight:'700', color:'#6a6f73'}}>
                     10,000 results
                 </div>
             </div>
@@ -1690,8 +1690,184 @@ export default function AllCourses() {
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
                     </div>
+                      <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                        <div className='what-you-will-learn'>
+                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                        </div>
+                        <div className='what-course-provide'>
+                            <ul>
+                                <li>
+
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will learn how to leverage the power of Python to solve tasks.</span>
+
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will build games and programs that use Python libraries.</span></li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will be able to use Python for your own work problems or personal projects.</span></li>
+                            </ul>
+                        </div>
+
+                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                            <div className='add-to-cart'>
+                                <button style={{width:'20rem'}}>Add to cart</button>
+                            </div>
+                            <div className='like-btn'>
+                                <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
+                                favorite_border
+                                </span>
+                            
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                
+                    <div className='allCourses-card mx-auto'>
+                        <div className='allCourses-card-img'>
+                            <img src={course_img} alt="" className='' />
+                        </div>
+                        <div className='allCourses-card-details'>
+                            <h5 class="card-title" style={{ fontWeight: 'bold' }}>The Complete Python Bootcamp From Zero to Hero in Python</h5>
+                            <p class="card-text" style={{ marginTop: '.3rem', marginBottom: '.3rem' }}>Learn Go ("Golang") from the ground up & in great depth by building multiple demo projects, incl. a REST API</p>
+                            <span className='instructor-name'>By Someone</span>
 
 
+                            <div className='rating' style={{ alignItems: 'unset' }}>
+                                <div className='rating-in-no'>
+                                    4.7
+                                </div>
+                                <div className='rating-in-stars'>
+                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                </div>
+                                <div className='no-of-reviews'>
+                                    (334,170)
+                                </div>
+                            </div>
+
+                            <div className='bestseller-upatedDate courses-bestseller-upatedDate' style={{ marginTop: '.1rem' }}>
+
+                                <div className='totalHour-level-subtitles courses-totalHour-level-subtitles' style={{ marginLeft: 0, fontSize: 'smaller' }}>
+                                    <div className='totalHour'>
+                                        22 total hours
+                                    </div>
+                                    <div className='totalLecture'>
+                                        127 lectures
+                                    </div>
+                                    <div className='level'>
+                                        All Levels
+                                    </div>
+                                    <div className='dubtitles'>
+                                        Subtitles
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className='allcourse-card-price' style={{ fontWeight: '700' }}>
+                            <span className='allcourse-card-price-span'>₹389</span>
+                        </div>
+                    </div>
+                      <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                        <div className='what-you-will-learn'>
+                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                        </div>
+                        <div className='what-course-provide'>
+                            <ul>
+                                <li>
+
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will learn how to leverage the power of Python to solve tasks.</span>
+
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will build games and programs that use Python libraries.</span></li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>You will be able to use Python for your own work problems or personal projects.</span></li>
+                            </ul>
+                        </div>
+
+                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                            <div className='add-to-cart'>
+                                <button style={{width:'20rem'}}>Add to cart</button>
+                            </div>
+                            <div className='like-btn'>
+                                <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
+                                favorite_border
+                                </span>
+                            
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                
+                    <div className='allCourses-card mx-auto'>
+                        <div className='allCourses-card-img'>
+                            <img src={course_img} alt="" className='' />
+                        </div>
+                        <div className='allCourses-card-details'>
+                            <h5 class="card-title" style={{ fontWeight: 'bold' }}>The Complete Python Bootcamp From Zero to Hero in Python</h5>
+                            <p class="card-text" style={{ marginTop: '.3rem', marginBottom: '.3rem' }}>Learn Go ("Golang") from the ground up & in great depth by building multiple demo projects, incl. a REST API</p>
+                            <span className='instructor-name'>By Someone</span>
+
+
+                            <div className='rating' style={{ alignItems: 'unset' }}>
+                                <div className='rating-in-no'>
+                                    4.7
+                                </div>
+                                <div className='rating-in-stars'>
+                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                </div>
+                                <div className='no-of-reviews'>
+                                    (334,170)
+                                </div>
+                            </div>
+
+                            <div className='bestseller-upatedDate courses-bestseller-upatedDate' style={{ marginTop: '.1rem' }}>
+
+                                <div className='totalHour-level-subtitles courses-totalHour-level-subtitles' style={{ marginLeft: 0, fontSize: 'smaller' }}>
+                                    <div className='totalHour'>
+                                        22 total hours
+                                    </div>
+                                    <div className='totalLecture'>
+                                        127 lectures
+                                    </div>
+                                    <div className='level'>
+                                        All Levels
+                                    </div>
+                                    <div className='dubtitles'>
+                                        Subtitles
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className='allcourse-card-price' style={{ fontWeight: '700' }}>
+                            <span className='allcourse-card-price-span'>₹389</span>
+                        </div>
+                    </div>
                       <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
                         <div className='what-you-will-learn'>
                             <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>

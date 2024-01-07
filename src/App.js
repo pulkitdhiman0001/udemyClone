@@ -17,6 +17,7 @@ import Index from './pages/Index.js'
 import Login from './pages/Login.js'
 import Signup from './pages/Signup.js'
 import Courses from './pages/Courses.js'
+import SelectedCoursePage from './pages/SelectedCoursePage.js';
 
 function App() {
 
@@ -71,6 +72,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
           <Route exact path='/courses' element={<Courses />} />
+          <Route exact path='/course_name' element={<SelectedCoursePage />} />
         </Routes>
 
 

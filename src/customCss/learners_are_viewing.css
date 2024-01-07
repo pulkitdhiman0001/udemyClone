@@ -115,13 +115,18 @@
 }
 
 .rating{
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
     margin: 0.2rem 0 0 0;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 700;
     gap: .2rem;
     color: black;
+}
+
+.rating-in-stars span {
+    color: #b4690e !important
+  ;
 }
 
 .no-of-reviews{

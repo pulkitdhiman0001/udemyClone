@@ -12,7 +12,8 @@ import course_img from "../images/courses.jpg"
 import ListItem from "../components/ListItemCarousel"
 
 import useWindowWidth from '../hooks/useWindowWidth'
-import Rating from '@mui/material/Rating';
+import ReactStars from 'react-rating-star-with-type'
+
 
 import BubbleMobileView from "../components/BubbleMobileView"
 import PopularInstructors from "../components/PopularInstructors"
@@ -115,7 +116,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -150,7 +155,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -185,7 +194,49 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />                                  </div>
+                                  <div className='no-of-reviews'>
+                                    (334,170)
+                                  </div>
+                                </div>
+                                <div className='course-price'>
+                                  ₹3,199
+                                </div>
+                                <div style={{ display: 'flex' }}>
+                                  <div className='seller-badge'>
+                                    <h6><span className="badge text-black">Bestseller</span></h6>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="uk-width-4-5">
+                            <div className='card-container'>
+                              <div className='course-img'>
+                                <img src={course_img} alt='course-img' />
+                              </div>
+                              <div className='course-details'>
+                                <div className='course-title'>
+                                  <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                </div>
+                                <div className='instructor-name'>
+                                  Dr. Angela Yu
+                                </div>
+                                <div className='rating'>
+                                  <div className='rating-in-no'>
+                                    4.7
+                                  </div>
+                                  <div className='rating-in-stars'>
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -220,42 +271,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                  </div>
-                                  <div className='no-of-reviews'>
-                                    (334,170)
-                                  </div>
-                                </div>
-                                <div className='course-price'>
-                                  ₹3,199
-                                </div>
-                                <div style={{ display: 'flex' }}>
-                                  <div className='seller-badge'>
-                                    <h6><span className="badge text-black">Bestseller</span></h6>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="uk-width-4-5">
-                            <div className='card-container'>
-                              <div className='course-img'>
-                                <img src={course_img} alt='course-img' />
-                              </div>
-                              <div className='course-details'>
-                                <div className='course-title'>
-                                  <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
-                                </div>
-                                <div className='instructor-name'>
-                                  Dr. Angela Yu
-                                </div>
-                                <div className='rating'>
-                                  <div className='rating-in-no'>
-                                    4.7
-                                  </div>
-                                  <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -316,7 +336,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -351,7 +375,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -386,7 +414,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -421,7 +453,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -456,7 +492,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -474,6 +514,85 @@ export default function Courses() {
                               </div>
                             </div>
                           </li>
+                          <li class="uk-width-4-5">
+                            <div className='card-container'>
+                              <div className='course-img'>
+                                <img src={course_img} alt='course-img' />
+                              </div>
+                              <div className='course-details'>
+                                <div className='course-title'>
+                                  <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                </div>
+                                <div className='instructor-name'>
+                                  Dr. Angela Yu
+                                </div>
+                                <div className='rating'>
+                                  <div className='rating-in-no'>
+                                    4.7
+                                  </div>
+                                  <div className='rating-in-stars'>
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
+                                  </div>
+                                  <div className='no-of-reviews'>
+                                    (334,170)
+                                  </div>
+                                </div>
+                                <div className='course-price'>
+                                  ₹3,199
+                                </div>
+                                <div style={{ display: 'flex' }}>
+                                  <div className='seller-badge'>
+                                    <h6><span className="badge text-black">Bestseller</span></h6>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="uk-width-4-5">
+                            <div className='card-container'>
+                              <div className='course-img'>
+                                <img src={course_img} alt='course-img' />
+                              </div>
+                              <div className='course-details'>
+                                <div className='course-title'>
+                                  <h3><a href="https://www.google.com">The Complete 2023 Web Development Bootcamp</a></h3>
+                                </div>
+                                <div className='instructor-name'>
+                                  Dr. Angela Yu
+                                </div>
+                                <div className='rating'>
+                                  <div className='rating-in-no'>
+                                    4.7
+                                  </div>
+                                  <div className='rating-in-stars'>
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
+                                  </div>
+                                  <div className='no-of-reviews'>
+                                    (334,170)
+                                  </div>
+                                </div>
+                                <div className='course-price'>
+                                  ₹3,199
+                                </div>
+                                <div style={{ display: 'flex' }}>
+                                  <div className='seller-badge'>
+                                    <h6><span className="badge text-black">Bestseller</span></h6>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+
                         </ul>
                       </div>
 
@@ -514,7 +633,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -532,6 +655,7 @@ export default function Courses() {
                               </div>
                             </div>
                           </li>
+
                           <li class="uk-width-4-5">
                             <div className='card-container'>
                               <div className='course-img'>
@@ -549,7 +673,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -567,6 +695,7 @@ export default function Courses() {
                               </div>
                             </div>
                           </li>
+
                           <li class="uk-width-4-5">
                             <div className='card-container'>
                               <div className='course-img'>
@@ -584,7 +713,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -602,6 +735,7 @@ export default function Courses() {
                               </div>
                             </div>
                           </li>
+
                           <li class="uk-width-4-5">
                             <div className='card-container'>
                               <div className='course-img'>
@@ -619,7 +753,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -637,6 +775,7 @@ export default function Courses() {
                               </div>
                             </div>
                           </li>
+
                           <li class="uk-width-4-5">
                             <div className='card-container'>
                               <div className='course-img'>
@@ -654,7 +793,11 @@ export default function Courses() {
                                     4.7
                                   </div>
                                   <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                    <ReactStars
+                                      value={4.5}
+                                      edit={false}
+                                      style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />
                                   </div>
                                   <div className='no-of-reviews'>
                                     (334,170)
@@ -672,6 +815,7 @@ export default function Courses() {
                               </div>
                             </div>
                           </li>
+
                         </ul>
                       </div>
 
@@ -724,12 +868,16 @@ export default function Courses() {
 
                             </div>
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating'>
                               <div className='rating-in-no'>
                                 4.7
                               </div>
                               <div className='rating-in-stars'>
-                                <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
+                                <ReactStars
+                                  value={4.5}
+                                  edit={false}
+                                  style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                />
                               </div>
                               <div className='no-of-reviews'>
                                 (334,170)
@@ -780,13 +928,16 @@ export default function Courses() {
 
                             </div>
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating'>
                               <div className='rating-in-no'>
                                 4.7
                               </div>
                               <div className='rating-in-stars'>
-                                <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                              </div>
+                                <ReactStars
+                                  value={4.5}
+                                  edit={false}
+                                  style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                />                              </div>
                               <div className='no-of-reviews'>
                                 (334,170)
                               </div>

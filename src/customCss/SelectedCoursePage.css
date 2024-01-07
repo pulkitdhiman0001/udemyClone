@@ -1,0 +1,27 @@
+/* .sticky-nav{
+    top: 0;
+    position: fixed;
+    background-color: #2d2f31;
+} */
+
+.SelectedCoursePage-breadcrumb{
+    justify-content: left;
+    box-shadow: none;
+    padding: 0;
+    border-top: none;
+}
+
+.SelectedCoursePage-left h3{
+    margin-top: 0;
+    font-weight: 700;
+    color: white;
+}
+
+.SelectedCoursePage-course-info{
+    max-width: 35rem;
+    font-size: 1.1rem;
+}
+
+.SelectedCoursePage-course-info .rating{
+    color: white !important;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-import Rating from '@mui/material/Rating';
+import ReactStars from 'react-rating-star-with-type'
+
 
 import course_img from "../images/courses.jpg"
 import useWindowWidth from '../hooks/useWindowWidth';
@@ -90,8 +91,11 @@ export default function AllCourses() {
                                         <div className='allcourses-rating'>
                                             <div className='rating-filter-one'>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                <span style={{ marginLeft: '.2rem' }}>4.5 & up</span>
+                                                <ReactStars classNames='rating-in-stars'
+                                                    value={4.5}
+                                                    edit={false}
+                                                    style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                />                                                <span style={{ marginLeft: '.2rem' }}>4.5 & up</span>
                                                 <span className='total-courses'>(10,000)</span>
                                             </div>
 
@@ -100,8 +104,11 @@ export default function AllCourses() {
                                         <div className='allcourses-rating'>
                                             <div className='rating-filter-two'>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                <Rating name="half-rating-read" defaultValue={4.0} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                <span style={{ marginLeft: '.2rem' }}>4.0 & up</span>
+                                                <ReactStars classNames='rating-in-stars'
+                                                    value={4.5}
+                                                    edit={false}
+                                                    style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                />                                                <span style={{ marginLeft: '.2rem' }}>4.0 & up</span>
                                                 <span className='total-courses'>(10,000)</span>
                                             </div>
 
@@ -110,8 +117,11 @@ export default function AllCourses() {
                                         <div className='allcourses-rating'>
                                             <div className='rating-filter-three'>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                <span style={{ marginLeft: '.2rem' }}>3.5 & up</span>
+                                                <ReactStars classNames='rating-in-stars'
+                                                    value={4.5}
+                                                    edit={false}
+                                                    style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                />                                                <span style={{ marginLeft: '.2rem' }}>3.5 & up</span>
                                                 <span className='total-courses'>(10,000)</span>
                                             </div>
 
@@ -120,8 +130,11 @@ export default function AllCourses() {
                                         <div className='allcourses-rating'>
                                             <div className='rating-filter-four'>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                <Rating name="half-rating-read" defaultValue={3.0} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                <span style={{ marginLeft: '.2rem' }}>3.0 & up</span>
+                                                <ReactStars classNames='rating-in-stars'
+                                                    value={4.5}
+                                                    edit={false}
+                                                    style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                />                                                <span style={{ marginLeft: '.2rem' }}>3.0 & up</span>
                                                 <span className='total-courses'>(10,000)</span>
                                             </div>
 
@@ -773,7 +786,7 @@ export default function AllCourses() {
                             <div className='sort-query'>{selectedSort}</div>
                         </div>
                         <i className='material-icons' style={{ padding: 0, background: 'transparent', color: 'black', fontSize: '1.5rem', marginLeft: '1rem' }}>keyboard_arrow_down</i>
-        
+
                     </div>
                     <div uk-dropdown="mode: hover, click" className='p-0'>
                         <ul class="list-group">
@@ -787,7 +800,7 @@ export default function AllCourses() {
                         <span>Clear filters</span>
                     </div>
                 </div>
-                <div className='results' style={{fontWeight:'700', color:'#6a6f73'}}>
+                <div className='results' style={{ fontWeight: '700', color: '#6a6f73' }}>
                     10,000 results
                 </div>
             </div>
@@ -809,7 +822,11 @@ export default function AllCourses() {
                                                 <div className='allcourses-rating'>
                                                     <div className='rating-filter-one'>
                                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                        <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
+                                                        <ReactStars classNames='rating-in-stars'
+                                                            value={4.5}
+                                                            edit={false}
+                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                        />                                                        
                                                         <span style={{ marginLeft: '.2rem' }}>4.5 & up</span>
                                                         <span className='total-courses'>(10,000)</span>
                                                     </div>
@@ -819,8 +836,11 @@ export default function AllCourses() {
                                                 <div className='allcourses-rating'>
                                                     <div className='rating-filter-two'>
                                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                        <Rating name="half-rating-read" defaultValue={4.0} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                        <span style={{ marginLeft: '.2rem' }}>4.0 & up</span>
+                                                        <ReactStars classNames='rating-in-stars'
+                                                            value={4.5}
+                                                            edit={false}
+                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                        />                                                        <span style={{ marginLeft: '.2rem' }}>4.0 & up</span>
                                                         <span className='total-courses'>(10,000)</span>
                                                     </div>
 
@@ -829,8 +849,11 @@ export default function AllCourses() {
                                                 <div className='allcourses-rating'>
                                                     <div className='rating-filter-three'>
                                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                        <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                        <span style={{ marginLeft: '.2rem' }}>3.5 & up</span>
+                                                        <ReactStars classNames='rating-in-stars'
+                                                            value={4.5}
+                                                            edit={false}
+                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                        />                                                        <span style={{ marginLeft: '.2rem' }}>3.5 & up</span>
                                                         <span className='total-courses'>(10,000)</span>
                                                     </div>
 
@@ -839,8 +862,11 @@ export default function AllCourses() {
                                                 <div className='allcourses-rating'>
                                                     <div className='rating-filter-four'>
                                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" style={{ width: '1.2em', height: '1.2em', border: '1px solid black', marginRight: '.5rem' }} />
-                                                        <Rating name="half-rating-read" defaultValue={3.0} precision={0.5} readOnly style={{ fontSize: '1.2rem', color: 'goldenrod' }} />
-                                                        <span style={{ marginLeft: '.2rem' }}>3.0 & up</span>
+                                                        <ReactStars classNames='rating-in-stars'
+                                                            value={4.5}
+                                                            edit={false}
+                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                        />                                                        <span style={{ marginLeft: '.2rem' }}>3.0 & up</span>
                                                         <span className='total-courses'>(10,000)</span>
                                                     </div>
 
@@ -1475,13 +1501,16 @@ export default function AllCourses() {
                             <span className='instructor-name'>By Someone</span>
 
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating' >
                                 <div className='rating-in-no'>
                                     4.7
                                 </div>
                                 <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                </div>
+                                    <ReactStars
+                                        value={4.5}
+                                        edit={false}
+                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />                                </div>
                                 <div className='no-of-reviews'>
                                     (334,170)
                                 </div>
@@ -1513,9 +1542,9 @@ export default function AllCourses() {
                         </div>
                     </div>
 
-                    <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                    <div uk-dropdown="pos: top-center;auto-update: false; mode:hover" style={{ width: '30rem' }}>
                         <div className='what-you-will-learn'>
-                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                            <p style={{ fontWeight: '700', color: 'black' }}>what you'll learn</p>
                         </div>
                         <div className='what-course-provide'>
                             <ul>
@@ -1540,15 +1569,15 @@ export default function AllCourses() {
                             </ul>
                         </div>
 
-                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                        <div className='addtocart-like-btn' style={{ justifyContent: 'space-around' }}>
                             <div className='add-to-cart'>
-                                <button style={{width:'20rem'}}>Add to cart</button>
+                                <button style={{ width: '20rem' }}>Add to cart</button>
                             </div>
                             <div className='like-btn'>
                                 <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
-                                favorite_border
+                                    favorite_border
                                 </span>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -1563,13 +1592,16 @@ export default function AllCourses() {
                             <span className='instructor-name'>By Someone</span>
 
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating'>
                                 <div className='rating-in-no'>
                                     4.7
                                 </div>
                                 <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                </div>
+                                    <ReactStars
+                                        value={4.5}
+                                        edit={false}
+                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />                                </div>
                                 <div className='no-of-reviews'>
                                     (334,170)
                                 </div>
@@ -1601,9 +1633,9 @@ export default function AllCourses() {
                         </div>
                     </div>
 
-                    <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                    <div uk-dropdown="pos: top-center;auto-update: false; mode:hover" style={{ width: '30rem' }}>
                         <div className='what-you-will-learn'>
-                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                            <p style={{ fontWeight: '700', color: 'black' }}>what you'll learn</p>
                         </div>
                         <div className='what-course-provide'>
                             <ul>
@@ -1628,15 +1660,15 @@ export default function AllCourses() {
                             </ul>
                         </div>
 
-                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                        <div className='addtocart-like-btn' style={{ justifyContent: 'space-around' }}>
                             <div className='add-to-cart'>
-                                <button style={{width:'20rem'}}>Add to cart</button>
+                                <button style={{ width: '20rem' }}>Add to cart</button>
                             </div>
                             <div className='like-btn'>
                                 <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
-                                favorite_border
+                                    favorite_border
                                 </span>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -1653,13 +1685,16 @@ export default function AllCourses() {
                             <span className='instructor-name'>By Someone</span>
 
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating'>
                                 <div className='rating-in-no'>
                                     4.7
                                 </div>
                                 <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                </div>
+                                    <ReactStars
+                                        value={4.5}
+                                        edit={false}
+                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />                                </div>
                                 <div className='no-of-reviews'>
                                     (334,170)
                                 </div>
@@ -1690,9 +1725,9 @@ export default function AllCourses() {
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
                     </div>
-                      <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                    <div uk-dropdown="pos: top-center;auto-update: false; mode:hover" style={{ width: '30rem' }}>
                         <div className='what-you-will-learn'>
-                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                            <p style={{ fontWeight: '700', color: 'black' }}>what you'll learn</p>
                         </div>
                         <div className='what-course-provide'>
                             <ul>
@@ -1717,21 +1752,21 @@ export default function AllCourses() {
                             </ul>
                         </div>
 
-                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                        <div className='addtocart-like-btn' style={{ justifyContent: 'space-around' }}>
                             <div className='add-to-cart'>
-                                <button style={{width:'20rem'}}>Add to cart</button>
+                                <button style={{ width: '20rem' }}>Add to cart</button>
                             </div>
                             <div className='like-btn'>
                                 <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
-                                favorite_border
+                                    favorite_border
                                 </span>
-                            
+
                             </div>
                         </div>
-                    
-                    
+
+
                     </div>
-                
+
                     <div className='allCourses-card mx-auto'>
                         <div className='allCourses-card-img'>
                             <img src={course_img} alt="" className='' />
@@ -1742,13 +1777,16 @@ export default function AllCourses() {
                             <span className='instructor-name'>By Someone</span>
 
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating'>
                                 <div className='rating-in-no'>
                                     4.7
                                 </div>
                                 <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                </div>
+                                    <ReactStars
+                                        value={4.5}
+                                        edit={false}
+                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />                                </div>
                                 <div className='no-of-reviews'>
                                     (334,170)
                                 </div>
@@ -1779,9 +1817,9 @@ export default function AllCourses() {
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
                     </div>
-                      <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                    <div uk-dropdown="pos: top-center;auto-update: false; mode:hover" style={{ width: '30rem' }}>
                         <div className='what-you-will-learn'>
-                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                            <p style={{ fontWeight: '700', color: 'black' }}>what you'll learn</p>
                         </div>
                         <div className='what-course-provide'>
                             <ul>
@@ -1806,21 +1844,21 @@ export default function AllCourses() {
                             </ul>
                         </div>
 
-                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                        <div className='addtocart-like-btn' style={{ justifyContent: 'space-around' }}>
                             <div className='add-to-cart'>
-                                <button style={{width:'20rem'}}>Add to cart</button>
+                                <button style={{ width: '20rem' }}>Add to cart</button>
                             </div>
                             <div className='like-btn'>
                                 <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
-                                favorite_border
+                                    favorite_border
                                 </span>
-                            
+
                             </div>
                         </div>
-                    
-                    
+
+
                     </div>
-                
+
                     <div className='allCourses-card mx-auto'>
                         <div className='allCourses-card-img'>
                             <img src={course_img} alt="" className='' />
@@ -1831,13 +1869,16 @@ export default function AllCourses() {
                             <span className='instructor-name'>By Someone</span>
 
 
-                            <div className='rating' style={{ alignItems: 'unset' }}>
+                            <div className='rating' >
                                 <div className='rating-in-no'>
                                     4.7
                                 </div>
                                 <div className='rating-in-stars'>
-                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                </div>
+                                    <ReactStars
+                                        value={4.5}
+                                        edit={false}
+                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                    />                                </div>
                                 <div className='no-of-reviews'>
                                     (334,170)
                                 </div>
@@ -1868,9 +1909,9 @@ export default function AllCourses() {
                             <span className='allcourse-card-price-span'>₹389</span>
                         </div>
                     </div>
-                      <div uk-dropdown="pos: top-center;auto-update: false" style={{width:'30rem'}}>
+                    <div uk-dropdown="pos: top-center;auto-update: false; mode:hover" style={{ width: '30rem' }}>
                         <div className='what-you-will-learn'>
-                            <p style={{fontWeight:'700', color:'black'}}>what you'll learn</p>
+                            <p style={{ fontWeight: '700', color: 'black' }}>what you'll learn</p>
                         </div>
                         <div className='what-course-provide'>
                             <ul>
@@ -1895,19 +1936,19 @@ export default function AllCourses() {
                             </ul>
                         </div>
 
-                        <div className='addtocart-like-btn' style={{justifyContent:'space-around'}}>
+                        <div className='addtocart-like-btn' style={{ justifyContent: 'space-around' }}>
                             <div className='add-to-cart'>
-                                <button style={{width:'20rem'}}>Add to cart</button>
+                                <button style={{ width: '20rem' }}>Add to cart</button>
                             </div>
                             <div className='like-btn'>
                                 <span class="material-symbols-outlined" style={{ fontSize: '30px' }}>
-                                favorite_border
+                                    favorite_border
                                 </span>
-                            
+
                             </div>
                         </div>
-                    
-                    
+
+
                     </div>
                 </div>
             </div>

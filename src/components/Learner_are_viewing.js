@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-import Rating from '@mui/material/Rating';
+import ReactStars from 'react-rating-star-with-type'
+
 
 
 import "../customCss/learners_are_viewing.css"
@@ -34,7 +35,7 @@ export default function Learner_are_viewing() {
     }, []);
 
 
-   
+
 
     return (
 
@@ -92,7 +93,7 @@ export default function Learner_are_viewing() {
 
 
                     <section style={{ position: 'relative' }}>
-                       
+
 
 
                         <div class="course-cards uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider={' finite:true'} >
@@ -115,8 +116,11 @@ export default function Learner_are_viewing() {
                                                     4.7
                                                 </div>
                                                 <div className='rating-in-stars'>
-                                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                </div>
+                                                    <ReactStars
+                                                        value={4.5}
+                                                        edit={false}
+                                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                    />                                                </div>
                                                 <div className='no-of-reviews'>
                                                     (334,170)
                                                 </div>
@@ -150,8 +154,11 @@ export default function Learner_are_viewing() {
                                                     4.7
                                                 </div>
                                                 <div className='rating-in-stars'>
-                                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                </div>
+                                                    <ReactStars
+                                                        value={4.5}
+                                                        edit={false}
+                                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                    />                                                </div>
                                                 <div className='no-of-reviews'>
                                                     (334,170)
                                                 </div>
@@ -185,8 +192,11 @@ export default function Learner_are_viewing() {
                                                     4.7
                                                 </div>
                                                 <div className='rating-in-stars'>
-                                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                </div>
+                                                    <ReactStars
+                                                        value={4.5}
+                                                        edit={false}
+                                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                    />                                                </div>
                                                 <div className='no-of-reviews'>
                                                     (334,170)
                                                 </div>
@@ -220,8 +230,11 @@ export default function Learner_are_viewing() {
                                                     4.7
                                                 </div>
                                                 <div className='rating-in-stars'>
-                                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                </div>
+                                                    <ReactStars
+                                                        value={4.5}
+                                                        edit={false}
+                                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                    />                                                </div>
                                                 <div className='no-of-reviews'>
                                                     (334,170)
                                                 </div>
@@ -255,8 +268,11 @@ export default function Learner_are_viewing() {
                                                     4.7
                                                 </div>
                                                 <div className='rating-in-stars'>
-                                                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                </div>
+                                                    <ReactStars
+                                                        value={4.5}
+                                                        edit={false}
+                                                        style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                    />                                                </div>
                                                 <div className='no-of-reviews'>
                                                     (334,170)
                                                 </div>
@@ -276,7 +292,7 @@ export default function Learner_are_viewing() {
                             </ul>
                         </div>
 
-                      
+
 
 
                     </section >

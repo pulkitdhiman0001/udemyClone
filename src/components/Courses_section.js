@@ -4,7 +4,7 @@ import "../customCss/courses_section.css"
 
 import course_img from "../images/course-img.jpg"
 
-import Rating from '@mui/material/Rating';
+import ReactStars from 'react-rating-star-with-type'
 
 import ListItem from '../components/ListItemCarousel'
 
@@ -186,8 +186,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -221,8 +224,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -256,8 +262,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -291,8 +300,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -326,8 +338,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -387,8 +402,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -422,8 +440,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -457,8 +478,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -492,8 +516,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -527,8 +554,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -588,8 +618,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -623,8 +656,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -658,8 +694,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -693,8 +732,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>
@@ -728,8 +770,11 @@ export default function Courses_section() {
                                                                         4.7
                                                                     </div>
                                                                     <div className='rating-in-stars'>
-                                                                        <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly style={{ fontSize: '1.1rem' }} />
-                                                                    </div>
+                                                                        <ReactStars
+                                                                            value={4.5}
+                                                                            edit={false}
+                                                                            style={{ fontSize: '1.1rem', color: 'goldenrod' }}
+                                                                        />                                                                    </div>
                                                                     <div className='no-of-reviews'>
                                                                         (334,170)
                                                                     </div>

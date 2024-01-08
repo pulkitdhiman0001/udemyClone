@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.selectedCourseLinksColor{
+  text-decoration: underline;
+    color: #c0c4fc;
+}
+
+.font-size-point9rem{
+  font-size: .9rem;
+}
+
+.nostyleButton{
+  border: none;
+  background-color: transparent;
+}
+
+.purple-dark-link{
+  color: #5624d0;
+  font-weight: 700;
+  text-decoration: underline !important;
+}
+
+.purple-dark-link:hover{
+  text-decoration: underline !important;
+  color: #401b9c;
+}
+
+.purple-btn{
+  border: none;
+  background-color: #a435f0;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: .8rem;
+}
+
+.purple-btn:hover{
+  border: none;
+  background-color: #8710d8;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: .8rem;
+}
+
+
+.light-btn{
+  border: none;
+  background-color: white;
+  color: #282c34;
+  font-weight: 700;
+  text-align: center;
+  padding: .8rem;
+}
+
+.light-btn:hover{
+  border: none;
+  background-color: #1739531f;
+  color: #282c34;
+  font-weight: 700;
+  text-align: center;
+  padding: .8rem;
+}

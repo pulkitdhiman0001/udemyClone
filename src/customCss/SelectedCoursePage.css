@@ -11,17 +11,81 @@
     border-top: none;
 }
 
-.SelectedCoursePage-left h3{
+.SelectedCoursePage-left h2{
     margin-top: 0;
     font-weight: 700;
     color: white;
 }
 
 .SelectedCoursePage-course-info{
-    max-width: 35rem;
+    max-width: 44rem;
     font-size: 1.1rem;
 }
 
 .SelectedCoursePage-course-info .rating{
     color: white !important;
+}
+
+
+.SelectedCoursePage-card{
+    background-color: white;
+    /* padding: .2rem .2rem 0 .2rem; */
+    min-width: 22rem;
+}
+
+.SelectedCoursePage-card-img-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    /* box-shadow: inset 0 0 100px 40px rgba(0,0,0,0.5); */
+    box-shadow: inset 0px -48px 50px 30px rgba(0,0,0,0.5);
+}
+
+
+.SelectedCoursePage-card .image-overlay{
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
+    align-content: flex-end;
+    display: inline-grid;
+}
+
+.personal-or-teams{
+    display: flex;
+    font-weight: 700;
+    justify-content: space-around;
+}
+
+.personal, .teams{
+    width: 100%;
+    text-align: center;
+    padding: .7rem;
+    font-weight: 900;
+}
+
+.personal:hover, .teams:hover{
+    cursor: pointer;
+    color: #2d2f31 !important;
+}
+
+.activePersonalTeam{
+    border-bottom: 2px solid #2d2f31;
+}
+
+
+.purchase-section-box1{
+    padding: 1rem;
+}
+
+.custom-divider{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: .9rem;
+}
+
+.custom-divider hr{
+    border-top: 1px solid black !important;
+    margin-top: 0;
 }

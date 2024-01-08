@@ -14,50 +14,50 @@ export default function TopicsUnitCarousel() {
           <ul className="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid uk-grid-small">
             <li>
               <div className='topic'>
-                startup
+                Python
               </div>
               <div className='topic'>
-                startup
-              </div>
-            </li>
-            <li>
-              <div className='topic'>
-                startup
-              </div>
-              <div className='topic'>
-                startup
+                Data Science
               </div>
             </li>
             <li>
               <div className='topic'>
-                startup
+                React JS
               </div>
               <div className='topic'>
-                startup
-              </div>
-            </li>
-            <li>
-              <div className='topic'>
-                startup
-              </div>
-              <div className='topic'>
-                startup
+                Java
               </div>
             </li>
             <li>
               <div className='topic'>
-                startup
+                C# (Programming language)
               </div>
               <div className='topic'>
-                startup
+                Web Developement
               </div>
             </li>
             <li>
               <div className='topic'>
-                startup
+                JavaScript
               </div>
               <div className='topic'>
-                startup
+                Unreal Engine
+              </div>
+            </li>
+            <li>
+              <div className='topic'>
+                Machine Learning
+              </div>
+              <div className='topic'>
+                Unity
+              </div>
+            </li>
+            <li>
+              <div className='topic'>
+                Deep Learning
+              </div>
+              <div className='topic'>
+                SQL
               </div>
             </li>
 

@@ -9,6 +9,10 @@
     border: 1px solid #d1d7dc;
     text-align: center;
     font-weight: 900;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .topics-unit-carousel i{

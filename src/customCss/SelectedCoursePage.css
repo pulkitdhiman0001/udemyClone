@@ -3,89 +3,199 @@
     position: fixed;
     background-color: #2d2f31;
 } */
+.SelectedCoursePage-outer-container {
+    display: block;
+    background-color: #2d2f31;
+    padding: 0 2rem;
+    max-height: 28rem;
+}
 
-.SelectedCoursePage-breadcrumb{
+.SelectedCoursePage-breadcrumb {
     justify-content: left;
     box-shadow: none;
     padding: 0;
     border-top: none;
+
 }
 
-.SelectedCoursePage-left h2{
+.SelectedCoursePage-inner-container {
+    min-width: 80%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.SelectedCoursePage-left h2 {
     margin-top: 0;
     font-weight: 700;
     color: white;
 }
 
-.SelectedCoursePage-course-info{
+.SelectedCoursePage-course-info {
     max-width: 44rem;
     font-size: 1.1rem;
 }
 
-.SelectedCoursePage-course-info .rating{
+.SelectedCoursePage-course-info .rating {
     color: white !important;
 }
 
 
-.SelectedCoursePage-card{
+.SelectedCoursePage-card {
     background-color: white;
     /* padding: .2rem .2rem 0 .2rem; */
     min-width: 22rem;
 }
 
-.SelectedCoursePage-card-img-div{
+.SelectedCoursePage-card-img-div {
     background-repeat: no-repeat;
     background-size: cover;
     height: 12rem;
     /* box-shadow: inset 0 0 100px 40px rgba(0,0,0,0.5); */
-    box-shadow: inset 0px -48px 50px 30px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -48px 50px 30px rgba(0, 0, 0, 0.5);
 }
 
 
-.SelectedCoursePage-card .image-overlay{
+.SelectedCoursePage-card .image-overlay {
     text-align: center;
-
     height: 100%;
     width: 100%;
-    align-content: flex-end;
-    display: inline-grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.personal-or-teams{
+.personal-or-teams {
     display: flex;
     font-weight: 700;
     justify-content: space-around;
 }
 
-.personal, .teams{
+.personal,
+.teams {
     width: 100%;
     text-align: center;
     padding: .7rem;
     font-weight: 900;
 }
 
-.personal:hover, .teams:hover{
+.personal:hover,
+.teams:hover {
     cursor: pointer;
     color: #2d2f31 !important;
 }
 
-.activePersonalTeam{
+.activePersonalTeam {
     border-bottom: 2px solid #2d2f31;
 }
 
 
-.purchase-section-box1{
+.purchase-section-box1 {
     padding: 1rem;
 }
 
-.custom-divider{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: .9rem;
+.purchase-section-price {
+    gap: .5rem;
 }
 
-.custom-divider hr{
+.discount-offer-time-left {
+    gap: .5rem;
+    color: #b32d0f;
+}
+
+.custom-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.custom-divider hr {
     border-top: 1px solid black !important;
     margin-top: 0;
+}
+
+
+
+/* mobile view */
+
+@media (max-width:1052px) {
+
+    .SelectedCoursePage-outer-container {
+        max-height: none;
+    }
+
+    .SelectedCoursePage-inner-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 40rem;
+        min-width: auto;
+    }
+
+    .SelectedCoursePage-left {
+        margin-top: 1rem;
+    }
+
+    .SelectedCoursePage-left h2 {
+        text-align: justify;
+    }
+
+    .personal-or-teams-outer-div-mobile {
+        background-color: #2d2f31;
+        margin-top: 1rem;
+    }
+
+    .personal,
+    .teams {
+        width: 100%;
+        text-align: center;
+        padding: .7rem;
+        font-weight: 900;
+        color: white !important;
+    }
+
+    .personal:hover,
+    .teams:hover {
+        cursor: pointer;
+        color: white !important;
+    }
+
+    .activePersonalTeam {
+        border-bottom: 2px solid white;
+    }
+
+    .purchase-section-mobile-start-subscription-btn:hover {
+        background-color: #ffffff14 !important;
+    }
+
+    .subscribe-section,
+    .purchase-section-box1 {
+        padding: 0 !important;
+    }
+
+    .discount-offer-time-left {
+        color: #fcbca0 !important;
+    }
+
+    .SelectedCoursePage-card-img-div {
+        background-position: center;
+        height: 22rem;
+        background-size: contain;
+    }
+
+    .image-overlay-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .preview-this-course {
+        color: white;
+        font-weight: 700;
+
+        position: relative;
+        bottom: -6rem;
+    }
 }

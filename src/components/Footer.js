@@ -2,9 +2,10 @@ import React from 'react'
 
 import "../customCss/footer.css"
 
-export default function Footer({toggleLanguage}) {
+export default function Footer({ toggleLanguage }) {
     return (
         <>
+
             <div className='footer'>
                 <div className='footer-links'>
 
@@ -59,6 +60,7 @@ export default function Footer({toggleLanguage}) {
                     <span>© 2023 Udemy, Inc.</span>
                 </div>
             </div>
+
         </>
     )
 }

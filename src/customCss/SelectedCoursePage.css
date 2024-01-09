@@ -198,4 +198,10 @@
         position: relative;
         bottom: -6rem;
     }
+
+    .SelectedCoursePage-card{
+        min-width: auto;
+        margin-right: -32px;
+        margin-left: -2rem;
+    }
 }

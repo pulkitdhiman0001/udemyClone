@@ -29,6 +29,13 @@ export default function SelectedCoursePage() {
     }
 
 
+    const [isShowMoreExpanded, setShowMoreExpanded] = useState(false);
+
+    const handleShowMore = () => {
+        setShowMoreExpanded(!isShowMoreExpanded)
+    }
+
+
 
     const [isPersonalOrTeams, setisPersonalOrTeams] = useState(1);
 
@@ -120,12 +127,15 @@ export default function SelectedCoursePage() {
                             </div>
                         </div>
                         <div class="left-2" style={{ display: 'flex', justifyContent: 'center', background: 'white' }}>
-                            <div className='w-100 mt-2 text-dark' style={{ maxWidth: '65rem', padding: '1em' }}>
+                            <div className='mt-2 text-dark' style={{ width: '65rem', padding: '1em' }}>
                                 <div className='what-you-learn mx-auto mt-4 mb-4'>
 
                                     <div style={{ border: '1px solid #d1d7dc', maxWidth: '40rem', padding: '1rem' }}>
                                         <h3 style={{ fontWeight: '700' }}>What you'll learn</h3>
-                                        <div class="row row-cols-2 g-2">
+
+
+
+                                        <div class="row row-cols-2 gy-2 gx-3" style={{ maxHeight: isShowMoreExpanded ? '' : '15rem', overflow: 'hidden' }}>
 
                                             <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
                                                 <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
@@ -175,10 +185,76 @@ export default function SelectedCoursePage() {
                                                     You will learn how to leverage the power of Python to solve tasks.
                                                 </div>
                                             </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+
+
 
                                         </div>
 
+                                        <div className={isShowMoreExpanded ? `py-1 show_more_btn_after_click mt-3` : `mt-3 py-2 show_more_btn_before_click`}
+                                            onClick={handleShowMore}>
+                                            {/* {isShowMoreExpanded ? 'show less' + <span class="material-symbols-outlined">
+                                                expand_more
+                                            </span> : 'show more'} */}
+
+
+                                            {isShowMoreExpanded ? (
+                                                <>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        show less
+                                                        <span class="material-symbols-outlined">
+                                                            expand_less
+                                                        </span>
+                                                    </div>
+                                                </>
+                                            ) : <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                show more
+                                                <span class="material-symbols-outlined">
+                                                    expand_more
+                                                </span>
+                                            </div>}
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -290,7 +366,7 @@ export default function SelectedCoursePage() {
 
                         </div>
                     </div>
-                </div>
+                </div >
                 :
                 <div class="SelectedCoursePage-outer-container">
                     <div class="main mx-auto" style={{ minWidth: '-webkit-fill-available', marginTop: '2rem' }}>
@@ -470,10 +546,10 @@ export default function SelectedCoursePage() {
                             </div>
                         </div>
                         <div class="left-2" style={{ display: 'flex', justifyContent: 'center', background: 'white' }}>
-                            <div className='w-100 bg-light mt-2 text-dark' style={{ maxWidth: '65rem', padding: '1em', display: 'flex' }}>
+                            <div className='mt-2 text-dark' style={{ maxWidth: '65rem', padding: '1em', display: 'flex' }}>
                                 <div className='what-you-learn mx-auto mt-4 mb-4'>
 
-                                    <div style={{ border: '1px solid #d1d7dc', maxWidth: '40rem', padding: '1rem' }}>
+                                    {/* <div style={{ border: '1px solid #d1d7dc', maxWidth: '40rem', padding: '1rem' }}>
                                         <h3 style={{ fontWeight: '700' }}>What you'll learn</h3>
                                         <div class="row row-cols-1 g-2">
 
@@ -528,6 +604,131 @@ export default function SelectedCoursePage() {
 
                                         </div>
 
+                                    </div> */}
+
+                                    <div style={{ border: '1px solid #d1d7dc', maxWidth: '40rem', padding: '1rem' }}>
+                                        <h3 style={{ fontWeight: '700' }}>What you'll learn</h3>
+
+
+
+                                        <div class="row row-cols-1 gy-2 gx-3" style={{ maxHeight: isShowMoreExpanded ? '' : '15rem', overflow: 'hidden' }}>
+
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
+                                                <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>
+                                                    done
+                                                </span>
+                                                <div className=''>
+                                                    You will learn how to leverage the power of Python to solve tasks.
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div className={isShowMoreExpanded ? `py-1 show_more_btn_after_click mt-3` : `mt-3 py-2 show_more_btn_before_click`}
+                                            onClick={handleShowMore}>
+                                            {/* {isShowMoreExpanded ? 'show less' + <span class="material-symbols-outlined">
+                                                expand_more
+                                            </span> : 'show more'} */}
+
+
+                                            {isShowMoreExpanded ? (
+                                                <>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        show less
+                                                        <span class="material-symbols-outlined">
+                                                            expand_less
+                                                        </span>
+                                                    </div>
+                                                </>
+                                            ) : <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                show more
+                                                <span class="material-symbols-outlined">
+                                                    expand_more
+                                                </span>
+                                            </div>}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

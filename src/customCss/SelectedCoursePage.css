@@ -29,6 +29,7 @@
 .SelectedCoursePage-course-info {
     max-width: 37rem;
     font-size: 1.1rem;
+    padding: 1rem 0;
 }
 
 .SelectedCoursePage-course-info .rating {
@@ -125,7 +126,7 @@
     }
 
     .personal-or-teams-outer-div{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
  
 

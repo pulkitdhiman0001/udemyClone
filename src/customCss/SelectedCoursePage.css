@@ -1,13 +1,8 @@
-/* .sticky-nav{
-    top: 0;
-    position: fixed;
-    background-color: #2d2f31;
-} */
+
 .SelectedCoursePage-outer-container {
-    display: block;
+    display: flex;
     background-color: #2d2f31;
-    padding: 0 2rem;
-    max-height: 28rem;
+    max-width: 100%;
 }
 
 .SelectedCoursePage-breadcrumb {
@@ -25,14 +20,14 @@
     justify-content: center;
 }
 
-.SelectedCoursePage-left h2 {
+.SelectedCoursePage-course-info h2 {
     margin-top: 0;
     font-weight: 700;
     color: white;
 }
 
 .SelectedCoursePage-course-info {
-    max-width: 44rem;
+    max-width: 37rem;
     font-size: 1.1rem;
 }
 
@@ -43,15 +38,14 @@
 
 .SelectedCoursePage-card {
     background-color: white;
-    /* padding: .2rem .2rem 0 .2rem; */
-    min-width: 22rem;
+    max-width: 22rem;
+    color: #2d2f31;
 }
 
 .SelectedCoursePage-card-img-div {
     background-repeat: no-repeat;
     background-size: cover;
     height: 12rem;
-    /* box-shadow: inset 0 0 100px 40px rgba(0,0,0,0.5); */
     box-shadow: inset 0px -48px 50px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -119,31 +113,20 @@
 
 /* mobile view */
 
-@media (max-width:1052px) {
+@media (max-width:1054px) {
 
-    .SelectedCoursePage-outer-container {
+    .SelectedCoursePage-outer-container-desktop {
         max-height: none;
     }
 
-    .SelectedCoursePage-inner-container {
-        display: flex;
-        flex-direction: column;
-        max-width: 40rem;
-        min-width: auto;
-    }
-
-    .SelectedCoursePage-left {
+    .SelectedCoursePage-course-info{
         margin-top: 1rem;
     }
 
-    .SelectedCoursePage-left h2 {
-        text-align: justify;
+    .personal-or-teams-outer-div{
+        margin-top: 2rem;
     }
-
-    .personal-or-teams-outer-div-mobile {
-        background-color: #2d2f31;
-        margin-top: 1rem;
-    }
+ 
 
     .personal,
     .teams {
@@ -179,29 +162,17 @@
 
     .SelectedCoursePage-card-img-div {
         background-position: center;
-        height: 22rem;
-        background-size: contain;
+        height: 20rem;
+        background-size: cover;
     }
 
-    .image-overlay-mobile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        flex-direction: column;
-    }
+   
 
-    .preview-this-course {
-        color: white;
-        font-weight: 700;
+}
 
-        position: relative;
-        bottom: -6rem;
-    }
-
-    .SelectedCoursePage-card{
-        min-width: auto;
-        margin-right: -32px;
-        margin-left: -2rem;
+@media (max-width:600px) {
+    .SelectedCoursePage-card-img-div{
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
 }

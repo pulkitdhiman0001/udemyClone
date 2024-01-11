@@ -120,12 +120,12 @@ export default function SelectedCoursePage() {
                             </div>
                         </div>
                         <div class="left-2" style={{ display: 'flex', justifyContent: 'center', background: 'white' }}>
-                            <div className='w-100 bg-light mt-2 text-dark' style={{ maxWidth: '65rem', padding: '1em' }}>
+                            <div className='w-100 mt-2 text-dark' style={{ maxWidth: '65rem', padding: '1em' }}>
                                 <div className='what-you-learn mx-auto mt-4 mb-4'>
 
                                     <div style={{ border: '1px solid #d1d7dc', maxWidth: '40rem', padding: '1rem' }}>
                                         <h3 style={{ fontWeight: '700' }}>What you'll learn</h3>
-                                        <div class="row row-cols-2">
+                                        <div class="row row-cols-2 g-2">
 
                                             <div class="col d-flex text-muted" style={{ gap: '1rem', fontSize: '.9rem' }}>
                                                 <span class="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>

@@ -38,8 +38,9 @@
 
 .SelectedCoursePage-card {
     background-color: white;
-    max-width: 22rem;
+    max-width: 23rem;
     color: #2d2f31;
+    border: 1px solid rgb(209, 215, 220);
 }
 
 .SelectedCoursePage-card-img-div {

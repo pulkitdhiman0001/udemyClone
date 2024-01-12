@@ -44,6 +44,10 @@
     border: 1px solid rgb(209, 215, 220);
 }
 
+.personal-or-teams-outer-div-border{
+    border: .5px solid rgb(209, 215, 220);
+}
+
 .SelectedCoursePage-card-img-div {
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,6 +173,13 @@
     }
 
    
+    .coding-exercise{
+        display: block !important;
+    }
+
+    .coding-exercise-img{
+        margin-top: 2rem;
+    }
 
 }
 
